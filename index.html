@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rishi Abir — Voice Artist, Model &amp; Media Director</title>
-<meta name="description" content="Rishi Abir — Premier Voice Artist, Fashion Model, Photographer, and Senior Executive Officer of Media &amp; Branding at Jamuna Future Park, Dhaka.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishi Abir — Voice Artist, Model &amp; Media Director</title>
+  <meta name="description"
+    content="Rishi Abir — Premier Voice Artist, Fashion Model, Photographer, and Senior Executive Officer of Media &amp; Branding at Jamuna Future Park, Dhaka.">
 
-<!-- Fonts: Syne for bold creative titles, Instrument Serif for artistic flair, Plus Jakarta Sans for body, JetBrains Mono for studio specs -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <!-- Fonts: Syne for bold creative titles, Instrument Serif for artistic flair, Plus Jakarta Sans for body, JetBrains Mono for studio specs -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&family=Caveat:wght@600;700&display=swap"
+    rel="stylesheet">
 
-<!-- Tailwind (CDN with custom extended theme) -->
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          ink: '#07080E',
-          surface: '#0D111D',
-          surface2: '#151B2C',
-          surface3: '#1C253B',
-          violet: '#8B5CF6',
-          violetGlow: '#A78BFA',
-          amber: '#2FD9C7',
-          roseAccent: '#F43F5E',
-          fog: '#9CA3AF',
-          paper: '#F3F4F6',
-          line: '#1F293D',
-        },
-        fontFamily: {
-          syne: ['Syne', 'sans-serif'],
-          display: ['"Instrument Serif"', 'serif'],
-          script: ['Caveat', 'cursive'],
-          body: ['"Plus Jakarta Sans"', 'sans-serif'],
-          mono: ['"JetBrains Mono"', 'monospace'],
+  <!-- Tailwind (CDN with custom extended theme) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#07080E',
+            surface: '#0D111D',
+            surface2: '#151B2C',
+            surface3: '#1C253B',
+            violet: '#8B5CF6',
+            violetGlow: '#A78BFA',
+            amber: '#2FD9C7',
+            roseAccent: '#F43F5E',
+            fog: '#9CA3AF',
+            paper: '#F3F4F6',
+            line: '#1F293D',
+          },
+          fontFamily: {
+            syne: ['Syne', 'sans-serif'],
+            display: ['"Instrument Serif"', 'serif'],
+            script: ['Caveat', 'cursive'],
+            body: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
         },
       },
-    },
-  }
-</script>
+    }
+  </script>
 
-<style type="text/tailwindcss">
-  @layer utilities {
+  <style type="text/tailwindcss">
+    @layer utilities {
     .eq-bar { @apply w-[3px] bg-gradient-to-t from-violet to-amber rounded-full origin-bottom inline-block; }
     .icon { @apply w-5 h-5 stroke-current; }
     .glass-card { @apply bg-surface/80 backdrop-blur-xl border border-line/80 hover:border-violet/50 transition-all duration-300; }
@@ -51,874 +55,1239 @@
   }
 </style>
 
-<style>
-  @keyframes drift {
-    0%   { transform: translate(0, 0) scale(1); }
-    50%  { transform: translate(35px, -45px) scale(1.1); }
-    100% { transform: translate(0, 0) scale(1); }
-  }
-  .animate-drift { animation: drift 15s ease-in-out infinite; }
-  .animate-drift-slow { animation: drift 22s ease-in-out infinite reverse; }
+  <style>
+    @keyframes drift {
+      0% {
+        transform: translate(0, 0) scale(1);
+      }
 
-  @keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-  .marquee-track { animation: marquee 24s linear infinite; }
-  .marquee-track:hover { animation-play-state: paused; }
+      50% {
+        transform: translate(35px, -45px) scale(1.1);
+      }
 
-  @keyframes gradientShift {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-  }
-  .text-gradient { background-size: 200% auto; animation: gradientShift 6s ease-in-out infinite; }
+      100% {
+        transform: translate(0, 0) scale(1);
+      }
+    }
 
-  /* Film-grain texture overlay */
-  .grain::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    z-index: 60;
-    pointer-events: none;
-    opacity: 0.045;
-    mix-blend-mode: overlay;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  }
+    .animate-drift {
+      animation: drift 15s ease-in-out infinite;
+    }
 
-  .nav-link { position: relative; }
-  .nav-link::after {
-    content: '';
-    position: absolute;
-    left: 0; bottom: -6px;
-    width: 100%; height: 2px;
-    background: linear-gradient(90deg, #8B5CF6, #2FD9C7);
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-  .nav-link:hover::after,
-  .nav-link.active::after {
-    transform: scaleX(1);
-    transform-origin: left;
-  }
+    .animate-drift-slow {
+      animation: drift 22s ease-in-out infinite reverse;
+    }
 
-  .btn-shine { position: relative; overflow: hidden; }
-  .btn-shine::after {
-    content: '';
-    position: absolute;
-    top: 0; left: -100%;
-    width: 60%; height: 100%;
-    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
-    transform: skewX(-20deg);
-    transition: left 0.7s ease;
-  }
-  .btn-shine:hover::after { left: 140%; }
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
 
-  /* Timeline draw-in line */
-  #timeline-line {
-    position: absolute;
-    left: 0; top: 0;
-    width: 2px; height: 100%;
-    background: linear-gradient(180deg, #8B5CF6 0%, #2FD9C7 100%);
-    transform-origin: top;
-    transform: scaleY(0);
-    transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-  #timeline-line.grow { transform: scaleY(1); }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
 
-  .icon-badge {
-    transition: transform 0.35s ease, background-color 0.35s ease, border-color 0.35s ease;
-  }
-  .group:hover .icon-badge {
-    transform: scale(1.12) rotate(-6deg);
-  }
+    .marquee-track {
+      animation: marquee 24s linear infinite;
+    }
 
-  @keyframes ringPulse {
-    0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.7; }
-    100% { transform: translate(-50%, -50%) scale(1.7); opacity: 0; }
-  }
-  .mic-ring {
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%) scale(0.8);
-    animation: ringPulse 3.2s ease-out infinite;
-  }
+    .marquee-track:hover {
+      animation-play-state: paused;
+    }
 
-  @keyframes recBlink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.25; }
-  }
-  .rec-dot { animation: recBlink 1.5s ease-in-out infinite; }
-</style>
+    @keyframes gradientShift {
+
+      0%,
+      100% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+
+    .text-gradient {
+      background-size: 200% auto;
+      animation: gradientShift 6s ease-in-out infinite;
+    }
+
+    /* Film-grain texture overlay */
+    .grain::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 60;
+      pointer-events: none;
+      opacity: 0.045;
+      mix-blend-mode: overlay;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, #8B5CF6, #2FD9C7);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .btn-shine {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-shine::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+      transform: skewX(-20deg);
+      transition: left 0.7s ease;
+    }
+
+    .btn-shine:hover::after {
+      left: 140%;
+    }
+
+    /* Timeline draw-in line */
+    #timeline-line {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(180deg, #8B5CF6 0%, #2FD9C7 100%);
+      transform-origin: top;
+      transform: scaleY(0);
+      transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    #timeline-line.grow {
+      transform: scaleY(1);
+    }
+
+    .icon-badge {
+      transition: transform 0.35s ease, background-color 0.35s ease, border-color 0.35s ease;
+    }
+
+    .group:hover .icon-badge {
+      transform: scale(1.12) rotate(-6deg);
+    }
+
+    @keyframes ringPulse {
+      0% {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0.7;
+      }
+
+      100% {
+        transform: translate(-50%, -50%) scale(1.7);
+        opacity: 0;
+      }
+    }
+
+    .mic-ring {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.8);
+      animation: ringPulse 3.2s ease-out infinite;
+    }
+
+    @keyframes recBlink {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.25;
+      }
+    }
+
+    .rec-dot {
+      animation: recBlink 1.5s ease-in-out infinite;
+    }
+  </style>
 </head>
 
 <body class="bg-ink text-paper font-body antialiased grain selection:bg-violet selection:text-paper">
 
-<!-- ============ HEADER NAV ============ -->
-<header id="site-header" class="fixed top-0 inset-x-0 z-50 border-b border-line/60 bg-ink/80 backdrop-blur-md transition-all">
-  <div id="scroll-progress" class="absolute top-0 left-0 h-[2px] bg-gradient-to-r from-violet via-amber to-roseAccent w-0 transition-all duration-150"></div>
-  <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-    <a href="#home" class="flex items-center gap-3 group">
-      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-violet to-amber p-0.5 shadow-lg shadow-violet/20 group-hover:scale-105 transition-transform">
-        <div class="w-full h-full bg-ink rounded-[10px] flex items-center justify-center font-syne font-bold text-amber text-lg">
-          RA
+  <!-- ============ HEADER NAV ============ -->
+  <header id="site-header"
+    class="fixed top-0 inset-x-0 z-50 border-b border-line/60 bg-ink/80 backdrop-blur-md transition-all">
+    <div id="scroll-progress"
+      class="absolute top-0 left-0 h-[2px] bg-gradient-to-r from-violet via-amber to-roseAccent w-0 transition-all duration-150">
+    </div>
+    <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3 group">
+        <div
+          class="w-10 h-10 rounded-xl bg-gradient-to-br from-violet to-amber p-0.5 shadow-lg shadow-violet/20 group-hover:scale-105 transition-transform">
+          <div
+            class="w-full h-full bg-ink rounded-[10px] flex items-center justify-center font-syne font-bold text-amber text-lg">
+            RA
+          </div>
         </div>
-      </div>
-      <div>
-        <span class="font-syne font-bold text-lg tracking-tight text-paper block leading-none">RISHI ABIR</span>
-        <span class="font-mono text-[10px] text-amber tracking-widest uppercase block mt-0.5">Voice &amp; Vision</span>
-      </div>
-    </a>
-
-    <ul class="hidden md:flex items-center gap-8 font-mono text-xs uppercase tracking-widest text-fog">
-      <li><a href="#about" class="nav-link hover:text-amber transition-colors" data-target="about">About</a></li>
-      <li><a href="#voice" class="nav-link hover:text-amber transition-colors" data-target="voice">Voice Reel</a></li>
-      <li><a href="#simulator" class="nav-link hover:text-amber transition-colors" data-target="simulator">Mic Studio</a></li>
-      <li><a href="#brand" class="nav-link hover:text-amber transition-colors" data-target="brand">Branding</a></li>
-      <li><a href="#career" class="nav-link hover:text-amber transition-colors" data-target="career">Career</a></li>
-      <li><a href="#photography" class="nav-link hover:text-amber transition-colors" data-target="photography">Gallery</a></li>
-      <li><a href="#contact" class="nav-link hover:text-amber transition-colors" data-target="contact">Contact</a></li>
-    </ul>
-
-    <div class="hidden md:flex items-center gap-4">
-      <a href="#contact" class="btn-shine px-5 py-2.5 rounded-full bg-gradient-to-r from-violet to-amber/90 text-ink font-semibold text-xs uppercase tracking-wider hover:opacity-95 shadow-lg shadow-violet/20 transition-all">
-        Book Voice Slot
+        <div>
+          <span class="font-syne font-bold text-lg tracking-tight text-paper block leading-none">RISHI ABIR</span>
+          <span class="font-mono text-[10px] text-amber tracking-widest uppercase block mt-0.5">Voice &amp;
+            Vision</span>
+        </div>
       </a>
-    </div>
 
-    <button id="menu-btn" class="md:hidden text-paper p-2 focus:outline-none" aria-label="Open menu" aria-expanded="false">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-    </button>
-  </nav>
+      <ul class="hidden md:flex items-center gap-8 font-mono text-xs uppercase tracking-widest text-fog">
+        <li><a href="#about" class="nav-link hover:text-amber transition-colors" data-target="about">About</a></li>
+        <li><a href="#voice" class="nav-link hover:text-amber transition-colors" data-target="voice">Voice Reel</a></li>
+        <li><a href="#simulator" class="nav-link hover:text-amber transition-colors" data-target="simulator">Mic
+            Studio</a></li>
+        <li><a href="#brand" class="nav-link hover:text-amber transition-colors" data-target="brand">Branding</a></li>
+        <li><a href="#career" class="nav-link hover:text-amber transition-colors" data-target="career">Career</a></li>
+        <li><a href="#photography" class="nav-link hover:text-amber transition-colors"
+            data-target="photography">Gallery</a></li>
+        <li><a href="#contact" class="nav-link hover:text-amber transition-colors" data-target="contact">Contact</a>
+        </li>
+      </ul>
 
-  <!-- Mobile menu -->
-  <div id="mobile-menu" class="hidden md:hidden border-t border-line/60 bg-ink/95 backdrop-blur-xl">
-    <ul class="flex flex-col px-6 py-6 gap-5 font-mono text-sm uppercase tracking-widest text-fog">
-      <li><a href="#about" class="mobile-link block hover:text-amber">About</a></li>
-      <li><a href="#voice" class="mobile-link block hover:text-amber">Voice Reel</a></li>
-      <li><a href="#simulator" class="mobile-link block hover:text-amber">Mic Studio</a></li>
-      <li><a href="#brand" class="mobile-link block hover:text-amber">Branding</a></li>
-      <li><a href="#career" class="mobile-link block hover:text-amber">Career</a></li>
-      <li><a href="#photography" class="mobile-link block hover:text-amber">Gallery</a></li>
-      <li><a href="#contact" class="mobile-link block hover:text-amber">Contact</a></li>
-    </ul>
-  </div>
-</header>
-
-<!-- ============ HERO SECTION ============ -->
-<section id="home" class="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
-  <!-- Background Glow & Soundwave Line Art -->
-  <svg class="pointer-events-none absolute inset-0 w-full h-full opacity-[0.08]" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0 400 Q150 200 300 400 T600 400 T900 400 T1200 400" stroke="#8B5CF6" stroke-width="2" fill="none"/>
-    <path d="M0 460 Q150 300 300 460 T600 460 T900 460 T1200 460" stroke="#2FD9C7" stroke-width="1.5" fill="none"/>
-  </svg>
-
-  <div class="pointer-events-none absolute -top-40 -right-40 w-[40rem] h-[40rem] bg-violet/20 rounded-full blur-[150px] animate-drift"></div>
-  <div class="pointer-events-none absolute -bottom-40 -left-40 w-[35rem] h-[35rem] bg-amber/15 rounded-full blur-[150px] animate-drift-slow"></div>
-
-  <div class="relative max-w-7xl mx-auto px-6 w-full grid md:grid-cols-[1.1fr_1fr] items-center gap-12 lg:gap-16">
-    <div data-reveal="up">
-      <div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-violet/30 bg-surface/80 text-fog text-xs font-mono mb-8 backdrop-blur-md">
-        <span class="inline-block w-2.5 h-2.5 rounded-full bg-amber animate-pulse"></span>
-        <span>DHAKA &bull; 23&deg;48'N 90&deg;24'E</span>
-        <span class="text-violet">&bull;</span>
-        <span class="text-amber">LIVE ON AIR</span>
-      </div>
-
-      <h1 class="font-syne font-extrabold text-5xl sm:text-7xl lg:text-8xl leading-[0.95] tracking-tight text-paper mb-4">
-        RISHI<br>
-        <span class="text-gradient font-display italic font-normal text-6xl sm:text-8xl lg:text-9xl">Abir</span>
-      </h1>
-
-      <p class="font-script text-3xl sm:text-4xl text-amber -rotate-1 mb-6">the voice &amp; presence you already know</p>
-
-      <!-- Signature animated equalizer -->
-      <div id="equalizer" class="flex items-end gap-[4px] h-12 my-6" aria-label="Equalizer sound bars visualizer"></div>
-
-      <p class="max-w-xl text-fog text-base sm:text-lg leading-relaxed font-light mb-8 space-y-3">
-        <span class="block text-paper font-semibold text-lg sm:text-xl">The signature voice behind major commercial campaigns, TV dubbing series &amp; animated features across Bangladesh.</span>
-        <span class="block text-fog">Bringing iconic characters, commercial ads, and documentary narrations to life with distinctive vocal depth, emotional range, and studio precision.</span>
-        <span class="block text-fog">Trusted by top broadcasting networks, creative production houses, and national brands for impactful voice artistry across screen and airwaves.</span>
-        <span class="block text-sm text-amber font-mono pt-1">&bull; Currently directing Media &amp; Branding at Asia's largest shopping destination — <strong class="text-paper">Jamuna Future Park</strong>.</span>
-      </p>
-
-      <!-- Role Cycler -->
-      <div class="p-4 rounded-xl border border-line bg-surface/60 backdrop-blur-md mb-10 max-w-lg">
-        <p class="font-mono text-xs uppercase tracking-widest text-fog flex items-center gap-2">
-          <span>Creative Focus:</span>
-          <span class="text-violet font-bold">&bull;</span>
-          <span id="role-cycler" class="text-paper font-bold text-sm tracking-normal">Voice Artist</span>
-        </p>
-      </div>
-
-      <div class="flex flex-wrap gap-4">
-        <a href="#voice" class="btn-shine group px-8 py-4 rounded-full bg-gradient-to-r from-violet to-violet/80 text-paper font-semibold text-sm hover:shadow-xl hover:shadow-violet/30 hover:-translate-y-0.5 transition-all inline-flex items-center gap-3">
-          <span>Listen to Voice Reel</span>
-          <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <a href="#simulator" class="btn-shine px-8 py-4 rounded-full border border-line bg-surface/50 text-paper font-semibold text-sm hover:border-amber hover:text-amber hover:-translate-y-0.5 transition-all">
-          Studio Mic Simulator
+      <div class="hidden md:flex items-center gap-4">
+        <a href="#contact"
+          class="btn-shine px-5 py-2.5 rounded-full bg-gradient-to-r from-violet to-amber/90 text-ink font-semibold text-xs uppercase tracking-wider hover:opacity-95 shadow-lg shadow-violet/20 transition-all">
+          Book Voice Slot
         </a>
       </div>
+
+      <button id="menu-btn" class="md:hidden text-paper p-2 focus:outline-none" aria-label="Open menu"
+        aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-line/60 bg-ink/95 backdrop-blur-xl">
+      <ul class="flex flex-col px-6 py-6 gap-5 font-mono text-sm uppercase tracking-widest text-fog">
+        <li><a href="#about" class="mobile-link block hover:text-amber">About</a></li>
+        <li><a href="#voice" class="mobile-link block hover:text-amber">Voice Reel</a></li>
+        <li><a href="#simulator" class="mobile-link block hover:text-amber">Mic Studio</a></li>
+        <li><a href="#brand" class="mobile-link block hover:text-amber">Branding</a></li>
+        <li><a href="#career" class="mobile-link block hover:text-amber">Career</a></li>
+        <li><a href="#photography" class="mobile-link block hover:text-amber">Gallery</a></li>
+        <li><a href="#contact" class="mobile-link block hover:text-amber">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section id="home" class="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
+    <!-- Background Glow & Soundwave Line Art -->
+    <svg class="pointer-events-none absolute inset-0 w-full h-full opacity-[0.08]" viewBox="0 0 1200 800"
+      preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 400 Q150 200 300 400 T600 400 T900 400 T1200 400" stroke="#8B5CF6" stroke-width="2" fill="none" />
+      <path d="M0 460 Q150 300 300 460 T600 460 T900 460 T1200 460" stroke="#2FD9C7" stroke-width="1.5" fill="none" />
+    </svg>
+
+    <div
+      class="pointer-events-none absolute -top-40 -right-40 w-[40rem] h-[40rem] bg-violet/20 rounded-full blur-[150px] animate-drift">
+    </div>
+    <div
+      class="pointer-events-none absolute -bottom-40 -left-40 w-[35rem] h-[35rem] bg-amber/15 rounded-full blur-[150px] animate-drift-slow">
     </div>
 
-    <!-- Hero Visual Showcase -->
-    <div data-reveal="scale" class="relative mx-auto w-full max-w-lg" data-tilt>
-      <div class="relative rounded-3xl overflow-hidden border border-line/80 bg-surface shadow-2xl shadow-violet/20 aspect-[4/5] group">
-        <img src="../../../.gemini/antigravity-ide/brain/5771a8fd-b1e9-448e-8a1b-a9aa545f7e5c/media__1785838422113.jpg" onerror="this.onerror=null; this.src='images/rishi_hero_studio.jpg';" alt="Rishi Abir Recording Studio Session" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-        
-        <!-- Duotone & Gradient Overlay -->
-        <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
-        <div class="absolute inset-0 bg-violet/10 mix-blend-color"></div>
-
-        <!-- Pulsing Soundwave Rings -->
-        <span class="mic-ring absolute w-[55%] aspect-square rounded-full border border-amber/40"></span>
-        <span class="mic-ring absolute w-[55%] aspect-square rounded-full border border-violet/50" style="animation-delay: 1.1s"></span>
-        <span class="mic-ring absolute w-[55%] aspect-square rounded-full border border-roseAccent/40" style="animation-delay: 2.2s"></span>
-
-        <!-- Live Status Overlay -->
-        <div class="absolute top-6 left-6 flex items-center gap-2.5 font-mono text-xs uppercase tracking-widest text-paper bg-ink/70 px-3.5 py-1.5 rounded-full border border-line backdrop-blur-md">
-          <span class="w-2.5 h-2.5 rounded-full bg-roseAccent rec-dot"></span> Studio 01 &bull; Active
+    <div class="relative max-w-7xl mx-auto px-6 w-full grid md:grid-cols-[1.1fr_1fr] items-center gap-12 lg:gap-16">
+      <div data-reveal="up">
+        <div
+          class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-violet/30 bg-surface/80 text-fog text-xs font-mono mb-8 backdrop-blur-md">
+          <span class="inline-block w-2.5 h-2.5 rounded-full bg-amber animate-pulse"></span>
+          <span>DHAKA &bull; 23&deg;48'N 90&deg;24'E</span>
+          <span class="text-violet">&bull;</span>
+          <span class="text-amber">LIVE ON AIR</span>
         </div>
 
-        <div class="absolute top-6 right-6 font-mono text-xs text-amber bg-ink/70 px-3 py-1 rounded-full border border-line backdrop-blur-md">
-          96kHz / 24-bit
-        </div>
+        <h1
+          class="font-syne font-extrabold text-5xl sm:text-7xl lg:text-8xl leading-[0.95] tracking-tight text-paper mb-4">
+          RISHI<br>
+          <span class="text-gradient font-display italic font-normal text-6xl sm:text-8xl lg:text-9xl">Abir</span>
+        </h1>
 
-        <!-- Live Audio Waveform Canvas Box -->
-        <div class="absolute bottom-6 inset-x-6 bg-ink/85 border border-line rounded-2xl p-4 backdrop-blur-md">
-          <div class="flex items-center justify-between mb-2">
-            <span class="font-mono text-[10px] uppercase tracking-widest text-fog">Live Spectrum Monitor</span>
-            <span class="font-mono text-[10px] text-amber">Studio Condenser</span>
-          </div>
-          <div class="w-full h-12 bg-surface/80 rounded-lg overflow-hidden border border-line/50 relative">
-            <canvas id="audio-canvas" class="w-full h-full block"></canvas>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ MARQUEE TICKER ============ -->
-<div class="border-y border-line/60 bg-surface/80 backdrop-blur-md overflow-hidden py-4">
-  <div class="flex whitespace-nowrap marquee-track">
-    <div class="flex items-center gap-8 font-syne font-bold text-lg uppercase tracking-wider text-fog/80 pr-8">
-      <span>VOICE ARTIST</span><span class="text-amber text-xs font-mono">&bull;</span>
-      <span>FASHION MODEL</span><span class="text-violet text-xs font-mono">&bull;</span>
-      <span>MEDIA &amp; BRANDING DIRECTOR</span><span class="text-amber text-xs font-mono">&bull;</span>
-      <span>CINEMATIC PHOTOGRAPHER</span><span class="text-roseAccent text-xs font-mono">&bull;</span>
-      <span>FM RADIO HOST</span><span class="text-amber text-xs font-mono">&bull;</span>
-      <span>ABSTRACT PAINTER</span><span class="text-violet text-xs font-mono">&bull;</span>
-      <span>JAMUNA FUTURE PARK</span><span class="text-amber text-xs font-mono">&bull;</span>
-    </div>
-    <div class="flex items-center gap-8 font-syne font-bold text-lg uppercase tracking-wider text-fog/80 pr-8" aria-hidden="true">
-      <span>VOICE ARTIST</span><span class="text-amber text-xs font-mono">&bull;</span>
-      <span>FASHION MODEL</span><span class="text-violet text-xs font-mono">&bull;</span>
-      <span>MEDIA &amp; BRANDING DIRECTOR</span><span class="text-amber text-xs font-mono">&bull;</span>
-      <span>CINEMATIC PHOTOGRAPHER</span><span class="text-roseAccent text-xs font-mono">&bull;</span>
-      <span>FM RADIO HOST</span><span class="text-amber text-xs font-mono">&bull;</span>
-      <span>ABSTRACT PAINTER</span><span class="text-violet text-xs font-mono">&bull;</span>
-      <span>JAMUNA FUTURE PARK</span><span class="text-amber text-xs font-mono">&bull;</span>
-    </div>
-  </div>
-</div>
-
-<!-- ============ ABOUT SECTION ============ -->
-<section id="about" class="max-w-7xl mx-auto px-6 py-28 md:py-36">
-  <div class="grid lg:grid-cols-[1.1fr_1fr] gap-16 items-center">
-    <div data-reveal="right" class="order-2 lg:order-1">
-      <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber mb-4">Behind The Voice</p>
-      <h2 class="font-syne font-bold text-4xl sm:text-5xl text-paper mb-8 leading-tight">
-        A voice you've heard across Bangladesh,<br>
-        <span class="font-display italic text-amber font-normal text-5xl sm:text-6xl">shaped by passion &amp; presence.</span>
-      </h2>
-
-      <div class="space-y-6 text-fog text-base sm:text-lg leading-relaxed font-light">
-        <p>
-          Rishi Abir has spent years lending his voice to major television advertisements, dubbed drama series,
-          and animated cartoons. Long before screens, his voice resonated across millions during his tenure as an
-          <span class="text-paper font-medium">FM Radio Presenter</span>, mastering tone, timing, and connection.
+        <p class="font-script text-3xl sm:text-4xl text-amber -rotate-1 mb-6">the voice &amp; presence you already know
         </p>
-        <p>
-          Beyond the microphone, Rishi has led high-profile voice campaigns for major national brands,
-          and collaborated with prominent Bangladeshi media outlets like <span class="text-paper font-medium">Prothom Alo</span>.
+
+        <!-- Signature animated equalizer -->
+        <div id="equalizer" class="flex items-end gap-[4px] h-12 my-6" aria-label="Equalizer sound bars visualizer">
+        </div>
+
+        <p class="max-w-xl text-fog text-base sm:text-lg leading-relaxed font-light mb-8 space-y-3">
+          <span class="block text-paper font-semibold text-lg sm:text-xl">The signature voice behind major commercial
+            campaigns, TV dubbing series &amp; animated features across Bangladesh.</span>
+          <span class="block text-fog">Bringing iconic characters, commercial ads, and documentary narrations to life
+            with distinctive vocal depth, emotional range, and studio precision.</span>
+          <span class="block text-fog">Trusted by top broadcasting networks, creative production houses, and national
+            brands for impactful voice artistry across screen and airwaves.</span>
+          <span class="block text-sm text-amber font-mono pt-1">&bull; Currently directing Media &amp; Branding at
+            Asia's largest shopping destination — <strong class="text-paper">Jamuna Future Park</strong>.</span>
         </p>
-        <p>
-          Today, he serves as <span class="text-amber font-medium">Senior Executive Officer of Media &amp; Branding</span> at
-          <span class="text-paper font-medium">Jamuna Future Park</span> — leading brand storytelling for Asia's premier shopping complex.
-        </p>
+
+        <!-- Role Cycler -->
+        <div class="p-4 rounded-xl border border-line bg-surface/60 backdrop-blur-md mb-10 max-w-lg">
+          <p class="font-mono text-xs uppercase tracking-widest text-fog flex items-center gap-2">
+            <span>Creative Focus:</span>
+            <span class="text-violet font-bold">&bull;</span>
+            <span id="role-cycler" class="text-paper font-bold text-sm tracking-normal">Voice Artist</span>
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="#voice"
+            class="btn-shine group px-8 py-4 rounded-full bg-gradient-to-r from-violet to-violet/80 text-paper font-semibold text-sm hover:shadow-xl hover:shadow-violet/30 hover:-translate-y-0.5 transition-all inline-flex items-center gap-3">
+            <span>Listen to Voice Reel</span>
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a href="#simulator"
+            class="btn-shine px-8 py-4 rounded-full border border-line bg-surface/50 text-paper font-semibold text-sm hover:border-amber hover:text-amber hover:-translate-y-0.5 transition-all">
+            Studio Mic Simulator
+          </a>
+        </div>
       </div>
 
-      <div class="grid sm:grid-cols-3 gap-6 mt-10">
-        <div class="p-5 rounded-2xl border border-line bg-surface/50">
-          <span class="font-syne font-extrabold text-3xl text-amber block">500+</span>
-          <span class="font-mono text-xs text-fog uppercase tracking-wider block mt-1">Commercial Voiceovers</span>
-        </div>
-        <div class="p-5 rounded-2xl border border-line bg-surface/50">
-          <span class="font-syne font-extrabold text-3xl text-violet block">100+</span>
-          <span class="font-mono text-xs text-fog uppercase tracking-wider block mt-1">Dubbed TV Episodes</span>
-        </div>
-        <div class="p-5 rounded-2xl border border-line bg-surface/50">
-          <span class="font-syne font-extrabold text-3xl text-roseAccent block">10M+</span>
-          <span class="font-mono text-xs text-fog uppercase tracking-wider block mt-1">Media Audience Reach</span>
+      <!-- Hero Visual Showcase -->
+      <div data-reveal="scale" class="relative mx-auto w-full max-w-lg" data-tilt>
+        <div
+          class="relative rounded-3xl overflow-hidden border border-line/80 bg-surface shadow-2xl shadow-violet/20 aspect-[4/5] group">
+          <img src="/images/rishi_abir.jpg" onerror="this.onerror=null; this.src='images/rishi_hero_studio.jpg';"
+            alt="Rishi Abir Recording Studio Session"
+            class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+
+          <!-- Duotone & Gradient Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute inset-0 bg-violet/10 mix-blend-color"></div>
+
+          <!-- Pulsing Soundwave Rings -->
+          <span class="mic-ring absolute w-[55%] aspect-square rounded-full border border-amber/40"></span>
+          <span class="mic-ring absolute w-[55%] aspect-square rounded-full border border-violet/50"
+            style="animation-delay: 1.1s"></span>
+          <span class="mic-ring absolute w-[55%] aspect-square rounded-full border border-roseAccent/40"
+            style="animation-delay: 2.2s"></span>
+
+          <!-- Live Status Overlay -->
+          <div
+            class="absolute top-6 left-6 flex items-center gap-2.5 font-mono text-xs uppercase tracking-widest text-paper bg-ink/70 px-3.5 py-1.5 rounded-full border border-line backdrop-blur-md">
+            <span class="w-2.5 h-2.5 rounded-full bg-roseAccent rec-dot"></span> Studio 01 &bull; Active
+          </div>
+
+          <div
+            class="absolute top-6 right-6 font-mono text-xs text-amber bg-ink/70 px-3 py-1 rounded-full border border-line backdrop-blur-md">
+            96kHz / 24-bit
+          </div>
+
+          <!-- Live Audio Waveform Canvas Box -->
+          <div class="absolute bottom-6 inset-x-6 bg-ink/85 border border-line rounded-2xl p-4 backdrop-blur-md">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-mono text-[10px] uppercase tracking-widest text-fog">Live Spectrum Monitor</span>
+              <span class="font-mono text-[10px] text-amber">Studio Condenser</span>
+            </div>
+            <div class="w-full h-12 bg-surface/80 rounded-lg overflow-hidden border border-line/50 relative">
+              <canvas id="audio-canvas" class="w-full h-full block"></canvas>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- About Portrait Image (Studio Condenser Mic) -->
-    <div data-reveal="left" class="order-1 lg:order-2">
-      <div class="relative rounded-3xl overflow-hidden border border-line bg-surface aspect-[4/5] shadow-2xl group" data-tilt-soft>
-        <img src="images/hero_rishi_mic.png" alt="Rishi Abir Studio Condenser Microphone" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-        <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent"></div>
-        
-        <!-- Pulsing Soundwave Rings -->
-        <span class="mic-ring absolute w-[55%] aspect-square rounded-full border border-amber/40"></span>
-        <span class="mic-ring absolute w-[55%] aspect-square rounded-full border border-violet/50" style="animation-delay: 1.1s"></span>
-        
-        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-ink/80 border border-line backdrop-blur-md">
-          <p class="font-mono text-xs text-amber uppercase tracking-widest mb-1">Voice Recording Studio</p>
-          <p class="font-syne font-bold text-xl text-paper">Studio Condenser Mic</p>
-          <p class="text-fog text-xs mt-1">96kHz / 24-Bit Studio High-Fidelity Audio Setup</p>
-        </div>
+  <!-- ============ MARQUEE TICKER ============ -->
+  <div class="border-y border-line/60 bg-surface/80 backdrop-blur-md overflow-hidden py-4">
+    <div class="flex whitespace-nowrap marquee-track">
+      <div class="flex items-center gap-8 font-syne font-bold text-lg uppercase tracking-wider text-fog/80 pr-8">
+        <span>VOICE ARTIST</span><span class="text-amber text-xs font-mono">&bull;</span>
+        <span>FASHION MODEL</span><span class="text-violet text-xs font-mono">&bull;</span>
+        <span>MEDIA &amp; BRANDING DIRECTOR</span><span class="text-amber text-xs font-mono">&bull;</span>
+        <span>CINEMATIC PHOTOGRAPHER</span><span class="text-roseAccent text-xs font-mono">&bull;</span>
+        <span>FM RADIO HOST</span><span class="text-amber text-xs font-mono">&bull;</span>
+        <span>ABSTRACT PAINTER</span><span class="text-violet text-xs font-mono">&bull;</span>
+        <span>JAMUNA FUTURE PARK</span><span class="text-amber text-xs font-mono">&bull;</span>
+      </div>
+      <div class="flex items-center gap-8 font-syne font-bold text-lg uppercase tracking-wider text-fog/80 pr-8"
+        aria-hidden="true">
+        <span>VOICE ARTIST</span><span class="text-amber text-xs font-mono">&bull;</span>
+        <span>FASHION MODEL</span><span class="text-violet text-xs font-mono">&bull;</span>
+        <span>MEDIA &amp; BRANDING DIRECTOR</span><span class="text-amber text-xs font-mono">&bull;</span>
+        <span>CINEMATIC PHOTOGRAPHER</span><span class="text-roseAccent text-xs font-mono">&bull;</span>
+        <span>FM RADIO HOST</span><span class="text-amber text-xs font-mono">&bull;</span>
+        <span>ABSTRACT PAINTER</span><span class="text-violet text-xs font-mono">&bull;</span>
+        <span>JAMUNA FUTURE PARK</span><span class="text-amber text-xs font-mono">&bull;</span>
       </div>
     </div>
   </div>
-</section>
 
-<!-- ============ INTERACTIVE VOICE SHOWCASE ============ -->
-<section id="voice" class="bg-surface/60 border-y border-line/60 py-28 md:py-36">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12" data-reveal="up">
-      <div>
-        <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber mb-3">Voice &amp; Sound Work</p>
-        <h2 class="font-syne font-bold text-4xl sm:text-5xl text-paper">Interactive Voice Reel.</h2>
-      </div>
-      <p class="text-fog max-w-md text-sm sm:text-base font-light">
-        Click any play button to preview live synthesized voice tone samples with real-time spectrum visualizer.
-      </p>
-    </div>
+  <!-- ============ ABOUT SECTION ============ -->
+  <section id="about" class="max-w-7xl mx-auto px-6 py-28 md:py-36">
+    <div class="grid lg:grid-cols-[1.1fr_1fr] gap-16 items-center">
+      <div data-reveal="right" class="order-2 lg:order-1">
+        <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber mb-4">Behind The Voice</p>
+        <h2 class="font-syne font-bold text-4xl sm:text-5xl text-paper mb-8 leading-tight">
+          A voice you've heard across Bangladesh,<br>
+          <span class="font-display italic text-amber font-normal text-5xl sm:text-6xl">shaped by passion &amp;
+            presence.</span>
+        </h2>
 
-    <!-- Voice Category Filter Tabs -->
-    <div class="flex flex-wrap gap-3 mb-12" data-reveal="up">
-      <button type="button" class="voice-tab-btn px-6 py-2.5 rounded-full bg-violet text-paper text-xs font-mono uppercase tracking-wider shadow-lg shadow-violet/30 transition-all" data-category="all">
-        All Mediums (4)
-      </button>
-      <button type="button" class="voice-tab-btn px-6 py-2.5 rounded-full bg-surface border border-line text-fog hover:text-paper text-xs font-mono uppercase tracking-wider transition-all" data-category="commercial">
-        TV Commercials
-      </button>
-      <button type="button" class="voice-tab-btn px-6 py-2.5 rounded-full bg-surface border border-line text-fog hover:text-paper text-xs font-mono uppercase tracking-wider transition-all" data-category="dubbing">
-        Dubbed TV Series
-      </button>
-      <button type="button" class="voice-tab-btn px-6 py-2.5 rounded-full bg-surface border border-line text-fog hover:text-paper text-xs font-mono uppercase tracking-wider transition-all" data-category="cartoon">
-        Animation &amp; Cartoons
-      </button>
-      <button type="button" class="voice-tab-btn px-6 py-2.5 rounded-full bg-surface border border-line text-fog hover:text-paper text-xs font-mono uppercase tracking-wider transition-all" data-category="radio">
-        FM Radio Broadcast
-      </button>
-    </div>
-
-    <!-- Voice Cards Grid -->
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <!-- Card 1 -->
-      <div class="voice-item-card glass-card p-8 rounded-3xl group flex flex-col justify-between" data-category="commercial" data-reveal="up" data-tilt-soft>
-        <div>
-          <div class="flex items-center justify-between mb-6">
-            <span class="icon-badge w-12 h-12 rounded-2xl border border-line bg-ink flex items-center justify-center text-amber">
-              <svg class="icon" viewBox="0 0 24 24" fill="none"><rect x="9" y="3" width="6" height="11" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M5 11a7 7 0 0014 0M12 18v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-            </span>
-            <span class="font-mono text-[10px] uppercase tracking-wider px-3 py-1 rounded-full border border-amber/30 text-amber bg-amber/10">Commercial</span>
-          </div>
-          <h3 class="font-syne font-bold text-2xl text-paper mb-3">TV &amp; Brand Ads</h3>
-          <p class="text-fog text-sm leading-relaxed font-light mb-6">Commercial voiceovers with rich resonance, energy, and brand conviction.</p>
+        <div class="space-y-6 text-fog text-base sm:text-lg leading-relaxed font-light">
+          <p>
+            Rishi Abir has spent years lending his voice to major television advertisements, dubbed drama series,
+            and animated cartoons. Long before screens, his voice resonated across millions during his tenure as an
+            <span class="text-paper font-medium">FM Radio Presenter</span>, mastering tone, timing, and connection.
+          </p>
+          <p>
+            Beyond the microphone, Rishi has led high-profile voice campaigns for major national brands,
+            and collaborated with prominent Bangladeshi media outlets like <span class="text-paper font-medium">Prothom
+              Alo</span>.
+          </p>
+          <p>
+            Today, he serves as <span class="text-amber font-medium">Senior Executive Officer of Media &amp;
+              Branding</span> at
+            <span class="text-paper font-medium">Jamuna Future Park</span> — leading brand storytelling for Asia's
+            premier shopping complex.
+          </p>
         </div>
-        <button type="button" class="play-demo-btn w-full py-3 px-4 rounded-xl border border-line bg-ink/70 hover:border-amber text-paper font-mono text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all" data-pitch="140" data-preset="condenser">
-          <svg class="play-icon w-4 h-4 text-amber" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
-          <span class="play-label">Play Demo</span>
-        </button>
+
+        <div class="grid sm:grid-cols-3 gap-6 mt-10">
+          <div class="p-5 rounded-2xl border border-line bg-surface/50">
+            <span class="font-syne font-extrabold text-3xl text-amber block">500+</span>
+            <span class="font-mono text-xs text-fog uppercase tracking-wider block mt-1">Commercial Voiceovers</span>
+          </div>
+          <div class="p-5 rounded-2xl border border-line bg-surface/50">
+            <span class="font-syne font-extrabold text-3xl text-violet block">100+</span>
+            <span class="font-mono text-xs text-fog uppercase tracking-wider block mt-1">Dubbed TV Episodes</span>
+          </div>
+          <div class="p-5 rounded-2xl border border-line bg-surface/50">
+            <span class="font-syne font-extrabold text-3xl text-roseAccent block">10M+</span>
+            <span class="font-mono text-xs text-fog uppercase tracking-wider block mt-1">Media Audience Reach</span>
+          </div>
+        </div>
       </div>
 
-      <!-- Card 2 -->
-      <div class="voice-item-card glass-card p-8 rounded-3xl group flex flex-col justify-between" data-category="dubbing" data-reveal="up" data-tilt-soft>
-        <div>
-          <div class="flex items-center justify-between mb-6">
-            <span class="icon-badge w-12 h-12 rounded-2xl border border-line bg-ink flex items-center justify-center text-violet">
-              <svg class="icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 21h8M12 18v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-            </span>
-            <span class="font-mono text-[10px] uppercase tracking-wider px-3 py-1 rounded-full border border-violet/30 text-violet bg-violet/10">Dubbing</span>
-          </div>
-          <h3 class="font-syne font-bold text-2xl text-paper mb-3">Dubbed TV Series</h3>
-          <p class="text-fog text-sm leading-relaxed font-light mb-6">Emotional character voicing for international drama series brought to local TV.</p>
-        </div>
-        <button type="button" class="play-demo-btn w-full py-3 px-4 rounded-xl border border-line bg-ink/70 hover:border-violet text-paper font-mono text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all" data-pitch="160" data-preset="dubbing">
-          <svg class="play-icon w-4 h-4 text-violet" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
-          <span class="play-label">Play Demo</span>
-        </button>
-      </div>
+      <!-- About Portrait Image (Studio Condenser Mic) -->
+      <div data-reveal="left" class="order-1 lg:order-2">
+        <div class="relative rounded-3xl overflow-hidden border border-line bg-surface aspect-[4/5] shadow-2xl group"
+          data-tilt-soft>
+          <img src="images/hero_rishi_mic.png" alt="Rishi Abir Studio Condenser Microphone"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent"></div>
 
-      <!-- Card 3 -->
-      <div class="voice-item-card glass-card p-8 rounded-3xl group flex flex-col justify-between" data-category="cartoon" data-reveal="up" data-tilt-soft>
-        <div>
-          <div class="flex items-center justify-between mb-6">
-            <span class="icon-badge w-12 h-12 rounded-2xl border border-line bg-ink flex items-center justify-center text-roseAccent">
-              <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M12 3l1.9 4.6L18 9l-4.1 1.4L12 15l-1.9-4.6L6 9l4.1-1.4L12 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M19 15l.7 1.7L21 17l-1.3.6L19 19l-.7-1.4L17 17l1.3-.3L19 15z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
-            </span>
-            <span class="font-mono text-[10px] uppercase tracking-wider px-3 py-1 rounded-full border border-roseAccent/30 text-roseAccent bg-roseAccent/10">Animation</span>
-          </div>
-          <h3 class="font-syne font-bold text-2xl text-paper mb-3">Cartoons &amp; Anime</h3>
-          <p class="text-fog text-sm leading-relaxed font-light mb-6">Versatile, animated character voices loved by kids and young audiences.</p>
-        </div>
-        <button type="button" class="play-demo-btn w-full py-3 px-4 rounded-xl border border-line bg-ink/70 hover:border-roseAccent text-paper font-mono text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all" data-pitch="180" data-preset="dubbing">
-          <svg class="play-icon w-4 h-4 text-roseAccent" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
-          <span class="play-label">Play Demo</span>
-        </button>
-      </div>
+          <!-- Pulsing Soundwave Rings -->
+          <span class="mic-ring absolute w-[55%] aspect-square rounded-full border border-amber/40"></span>
+          <span class="mic-ring absolute w-[55%] aspect-square rounded-full border border-violet/50"
+            style="animation-delay: 1.1s"></span>
 
-      <!-- Card 4 -->
-      <div class="voice-item-card glass-card p-8 rounded-3xl group flex flex-col justify-between" data-category="radio" data-reveal="up" data-tilt-soft>
-        <div>
-          <div class="flex items-center justify-between mb-6">
-            <span class="icon-badge w-12 h-12 rounded-2xl border border-line bg-ink flex items-center justify-center text-amber">
-              <svg class="icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="13" r="6" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="13" r="1.5" fill="currentColor"/><path d="M7 8l-2-3M17 8l2-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-            </span>
-            <span class="font-mono text-[10px] uppercase tracking-wider px-3 py-1 rounded-full border border-amber/30 text-amber bg-amber/10">Radio</span>
+          <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-ink/80 border border-line backdrop-blur-md">
+            <p class="font-mono text-xs text-amber uppercase tracking-widest mb-1">Voice Recording Studio</p>
+            <p class="font-syne font-bold text-xl text-paper">Studio Condenser Mic</p>
+            <p class="text-fog text-xs mt-1">96kHz / 24-Bit Studio High-Fidelity Audio Setup</p>
           </div>
-          <h3 class="font-syne font-bold text-2xl text-paper mb-3">FM Radio Presenting</h3>
-          <p class="text-fog text-sm leading-relaxed font-light mb-6">Years of live on-air radio hosting, storytelling, and music shows.</p>
         </div>
-        <button type="button" class="play-demo-btn w-full py-3 px-4 rounded-xl border border-line bg-ink/70 hover:border-amber text-paper font-mono text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all" data-pitch="150" data-preset="radio">
-          <svg class="play-icon w-4 h-4 text-amber" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
-          <span class="play-label">Play Demo</span>
-        </button>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ STUDIO MIC SIMULATOR ============ -->
-<section id="simulator" class="max-w-7xl mx-auto px-6 py-28 md:py-36">
-  <div class="text-center max-w-3xl mx-auto mb-16" data-reveal="up">
-    <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber mb-3">Interactive Experience</p>
-    <h2 class="font-syne font-bold text-4xl sm:text-5xl text-paper mb-4">Studio Mic Simulator.</h2>
-    <p class="text-fog text-base font-light">
-      Test how Rishi's voice adapts to different studio microphone setups and acoustical environments in real time.
-    </p>
-  </div>
-
-  <div class="glass-card rounded-3xl p-8 sm:p-12 border border-line relative overflow-hidden" data-reveal="scale">
-    <!-- Mic Preset Tabs -->
-    <div class="grid sm:grid-cols-4 gap-4 mb-10">
-      <button type="button" class="mic-preset-tab p-4 rounded-2xl border border-amber text-amber bg-amber/10 font-mono text-xs uppercase tracking-wider transition-all text-center" data-mode="condenser">
-        <span class="block text-lg font-bold font-syne tracking-normal text-paper mb-1">Condenser</span>
-        <span>Studio Pro</span>
-      </button>
-      <button type="button" class="mic-preset-tab p-4 rounded-2xl border border-line text-fog hover:border-amber/50 font-mono text-xs uppercase tracking-wider transition-all text-center" data-mode="radio">
-        <span class="block text-lg font-bold font-syne tracking-normal text-paper mb-1">FM Radio</span>
-        <span>Warm Airwaves</span>
-      </button>
-      <button type="button" class="mic-preset-tab p-4 rounded-2xl border border-line text-fog hover:border-amber/50 font-mono text-xs uppercase tracking-wider transition-all text-center" data-mode="dubbing">
-        <span class="block text-lg font-bold font-syne tracking-normal text-paper mb-1">Dubbing</span>
-        <span>Character Booth</span>
-      </button>
-      <button type="button" class="mic-preset-tab p-4 rounded-2xl border border-line text-fog hover:border-amber/50 font-mono text-xs uppercase tracking-wider transition-all text-center" data-mode="trailer">
-        <span class="block text-lg font-bold font-syne tracking-normal text-paper mb-1">Movie Trailer</span>
-        <span>Cinematic Bass</span>
-      </button>
-    </div>
-
-    <!-- Simulator Display Box -->
-    <div class="bg-ink/90 rounded-2xl p-8 border border-line grid md:grid-cols-[1fr_260px] gap-8 items-center">
-      <div>
-        <div class="flex items-center gap-3 mb-4">
-          <span id="sim-mic-badge" class="font-mono text-[10px] uppercase tracking-widest px-3 py-1 rounded-full border border-amber/30 text-amber bg-amber/10">Commercial / High-Fidelity</span>
-          <span id="sim-mic-freq" class="font-mono text-[10px] text-fog">20Hz - 20kHz &bull; Ultra Clean Highs</span>
+  <!-- ============ INTERACTIVE VOICE SHOWCASE ============ -->
+  <section id="voice" class="bg-surface/60 border-y border-line/60 py-28 md:py-36">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12" data-reveal="up">
+        <div>
+          <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber mb-3">Voice &amp; Sound Work</p>
+          <h2 class="font-syne font-bold text-4xl sm:text-5xl text-paper">Interactive Voice Reel.</h2>
         </div>
-        <h3 id="sim-mic-title" class="font-syne font-bold text-2xl sm:text-3xl text-paper mb-4">Studio Condenser Mic</h3>
-        <p id="sim-mic-script" class="font-display italic text-2xl text-amber leading-snug mb-6">
-          "Jamuna Future Park — Where extraordinary experiences begin every single day."
+        <p class="text-fog max-w-md text-sm sm:text-base font-light">
+          Click any play button to preview live synthesized voice tone samples with real-time spectrum visualizer.
         </p>
       </div>
 
-      <div class="flex flex-col gap-4 text-center">
-        <button id="sim-play-btn" type="button" class="play-demo-btn btn-shine py-4 px-6 rounded-2xl bg-gradient-to-r from-violet to-amber text-ink font-syne font-bold text-sm uppercase tracking-wider hover:scale-105 transition-all shadow-xl shadow-violet/20 flex items-center justify-center gap-2" data-pitch="140" data-preset="condenser">
-          <svg class="play-icon w-5 h-5 text-ink" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
-          <span class="play-label">Play Mic Sample</span>
+      <!-- Voice Category Filter Tabs -->
+      <div class="flex flex-wrap gap-3 mb-12" data-reveal="up">
+        <button type="button"
+          class="voice-tab-btn px-6 py-2.5 rounded-full bg-violet text-paper text-xs font-mono uppercase tracking-wider shadow-lg shadow-violet/30 transition-all"
+          data-category="all">
+          All Mediums (4)
         </button>
-        <span class="font-mono text-[10px] text-fog">Web Audio API Synth Engine</span>
+        <button type="button"
+          class="voice-tab-btn px-6 py-2.5 rounded-full bg-surface border border-line text-fog hover:text-paper text-xs font-mono uppercase tracking-wider transition-all"
+          data-category="commercial">
+          TV Commercials
+        </button>
+        <button type="button"
+          class="voice-tab-btn px-6 py-2.5 rounded-full bg-surface border border-line text-fog hover:text-paper text-xs font-mono uppercase tracking-wider transition-all"
+          data-category="dubbing">
+          Dubbed TV Series
+        </button>
+        <button type="button"
+          class="voice-tab-btn px-6 py-2.5 rounded-full bg-surface border border-line text-fog hover:text-paper text-xs font-mono uppercase tracking-wider transition-all"
+          data-category="cartoon">
+          Animation &amp; Cartoons
+        </button>
+        <button type="button"
+          class="voice-tab-btn px-6 py-2.5 rounded-full bg-surface border border-line text-fog hover:text-paper text-xs font-mono uppercase tracking-wider transition-all"
+          data-category="radio">
+          FM Radio Broadcast
+        </button>
+      </div>
+
+      <!-- Voice Cards Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div class="voice-item-card glass-card p-8 rounded-3xl group flex flex-col justify-between"
+          data-category="commercial" data-reveal="up" data-tilt-soft>
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span
+                class="icon-badge w-12 h-12 rounded-2xl border border-line bg-ink flex items-center justify-center text-amber">
+                <svg class="icon" viewBox="0 0 24 24" fill="none">
+                  <rect x="9" y="3" width="6" height="11" rx="3" stroke="currentColor" stroke-width="1.8" />
+                  <path d="M5 11a7 7 0 0014 0M12 18v3" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" />
+                </svg>
+              </span>
+              <span
+                class="font-mono text-[10px] uppercase tracking-wider px-3 py-1 rounded-full border border-amber/30 text-amber bg-amber/10">Commercial</span>
+            </div>
+            <h3 class="font-syne font-bold text-2xl text-paper mb-3">TV &amp; Brand Ads</h3>
+            <p class="text-fog text-sm leading-relaxed font-light mb-6">Commercial voiceovers with rich resonance,
+              energy, and brand conviction.</p>
+          </div>
+          <button type="button"
+            class="play-demo-btn w-full py-3 px-4 rounded-xl border border-line bg-ink/70 hover:border-amber text-paper font-mono text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all"
+            data-pitch="140" data-preset="condenser">
+            <svg class="play-icon w-4 h-4 text-amber" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" fill="currentColor" />
+            </svg>
+            <span class="play-label">Play Demo</span>
+          </button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="voice-item-card glass-card p-8 rounded-3xl group flex flex-col justify-between"
+          data-category="dubbing" data-reveal="up" data-tilt-soft>
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span
+                class="icon-badge w-12 h-12 rounded-2xl border border-line bg-ink flex items-center justify-center text-violet">
+                <svg class="icon" viewBox="0 0 24 24" fill="none">
+                  <rect x="3" y="5" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.8" />
+                  <path d="M8 21h8M12 18v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                </svg>
+              </span>
+              <span
+                class="font-mono text-[10px] uppercase tracking-wider px-3 py-1 rounded-full border border-violet/30 text-violet bg-violet/10">Dubbing</span>
+            </div>
+            <h3 class="font-syne font-bold text-2xl text-paper mb-3">Dubbed TV Series</h3>
+            <p class="text-fog text-sm leading-relaxed font-light mb-6">Emotional character voicing for international
+              drama series brought to local TV.</p>
+          </div>
+          <button type="button"
+            class="play-demo-btn w-full py-3 px-4 rounded-xl border border-line bg-ink/70 hover:border-violet text-paper font-mono text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all"
+            data-pitch="160" data-preset="dubbing">
+            <svg class="play-icon w-4 h-4 text-violet" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" fill="currentColor" />
+            </svg>
+            <span class="play-label">Play Demo</span>
+          </button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="voice-item-card glass-card p-8 rounded-3xl group flex flex-col justify-between"
+          data-category="cartoon" data-reveal="up" data-tilt-soft>
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span
+                class="icon-badge w-12 h-12 rounded-2xl border border-line bg-ink flex items-center justify-center text-roseAccent">
+                <svg class="icon" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3l1.9 4.6L18 9l-4.1 1.4L12 15l-1.9-4.6L6 9l4.1-1.4L12 3z" stroke="currentColor"
+                    stroke-width="1.6" stroke-linejoin="round" />
+                  <path d="M19 15l.7 1.7L21 17l-1.3.6L19 19l-.7-1.4L17 17l1.3-.3L19 15z" stroke="currentColor"
+                    stroke-width="1.4" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <span
+                class="font-mono text-[10px] uppercase tracking-wider px-3 py-1 rounded-full border border-roseAccent/30 text-roseAccent bg-roseAccent/10">Animation</span>
+            </div>
+            <h3 class="font-syne font-bold text-2xl text-paper mb-3">Cartoons &amp; Anime</h3>
+            <p class="text-fog text-sm leading-relaxed font-light mb-6">Versatile, animated character voices loved by
+              kids and young audiences.</p>
+          </div>
+          <button type="button"
+            class="play-demo-btn w-full py-3 px-4 rounded-xl border border-line bg-ink/70 hover:border-roseAccent text-paper font-mono text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all"
+            data-pitch="180" data-preset="dubbing">
+            <svg class="play-icon w-4 h-4 text-roseAccent" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" fill="currentColor" />
+            </svg>
+            <span class="play-label">Play Demo</span>
+          </button>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="voice-item-card glass-card p-8 rounded-3xl group flex flex-col justify-between"
+          data-category="radio" data-reveal="up" data-tilt-soft>
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span
+                class="icon-badge w-12 h-12 rounded-2xl border border-line bg-ink flex items-center justify-center text-amber">
+                <svg class="icon" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="13" r="6" stroke="currentColor" stroke-width="1.8" />
+                  <circle cx="12" cy="13" r="1.5" fill="currentColor" />
+                  <path d="M7 8l-2-3M17 8l2-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                </svg>
+              </span>
+              <span
+                class="font-mono text-[10px] uppercase tracking-wider px-3 py-1 rounded-full border border-amber/30 text-amber bg-amber/10">Radio</span>
+            </div>
+            <h3 class="font-syne font-bold text-2xl text-paper mb-3">FM Radio Presenting</h3>
+            <p class="text-fog text-sm leading-relaxed font-light mb-6">Years of live on-air radio hosting,
+              storytelling, and music shows.</p>
+          </div>
+          <button type="button"
+            class="play-demo-btn w-full py-3 px-4 rounded-xl border border-line bg-ink/70 hover:border-amber text-paper font-mono text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all"
+            data-pitch="150" data-preset="radio">
+            <svg class="play-icon w-4 h-4 text-amber" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" fill="currentColor" />
+            </svg>
+            <span class="play-label">Play Demo</span>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ BRAND & MEDIA DIRECTION ============ -->
-<section id="brand" class="bg-surface/60 border-y border-line/60 py-28 md:py-36">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="max-w-3xl mb-16" data-reveal="up">
-      <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber mb-3">Modeling &amp; Media Direction</p>
-      <h2 class="font-syne font-bold text-4xl sm:text-5xl text-paper mb-4">Faces of Familiar Brands.</h2>
+  <!-- ============ STUDIO MIC SIMULATOR ============ -->
+  <section id="simulator" class="max-w-7xl mx-auto px-6 py-28 md:py-36">
+    <div class="text-center max-w-3xl mx-auto mb-16" data-reveal="up">
+      <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber mb-3">Interactive Experience</p>
+      <h2 class="font-syne font-bold text-4xl sm:text-5xl text-paper mb-4">Studio Mic Simulator.</h2>
       <p class="text-fog text-base font-light">
-        Combining high-fashion modeling presence with senior executive media strategy for Asia's flagship destinations.
+        Test how Rishi's voice adapts to different studio microphone setups and acoustical environments in real time.
       </p>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-10">
-      <!-- Card 1: Brand Modeling -->
-      <div class="glass-card rounded-3xl overflow-hidden group" data-reveal="left" data-tilt>
-        <div class="relative aspect-[16/9] overflow-hidden">
-          <img src="images/brand_model_sara.png" alt="Rishi Abir Fashion Modeling Shoot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent"></div>
-          <span class="absolute top-4 left-4 font-mono text-[10px] uppercase tracking-widest px-3 py-1 rounded-full bg-ink/80 border border-line text-amber backdrop-blur-md">Fashion Modeling</span>
-        </div>
-        <div class="p-8 sm:p-10">
-          <h3 class="font-syne font-bold text-3xl text-paper mb-3">Apparel &amp; Fashion Modeling</h3>
-          <p class="text-fog text-base font-light leading-relaxed mb-6">
-            Featured model for premier Bangladeshi fashion houses, capturing contemporary style and masculine elegance.
+    <div class="glass-card rounded-3xl p-8 sm:p-12 border border-line relative overflow-hidden" data-reveal="scale">
+      <!-- Mic Preset Tabs -->
+      <div class="grid sm:grid-cols-4 gap-4 mb-10">
+        <button type="button"
+          class="mic-preset-tab p-4 rounded-2xl border border-amber text-amber bg-amber/10 font-mono text-xs uppercase tracking-wider transition-all text-center"
+          data-mode="condenser">
+          <span class="block text-lg font-bold font-syne tracking-normal text-paper mb-1">Condenser</span>
+          <span>Studio Pro</span>
+        </button>
+        <button type="button"
+          class="mic-preset-tab p-4 rounded-2xl border border-line text-fog hover:border-amber/50 font-mono text-xs uppercase tracking-wider transition-all text-center"
+          data-mode="radio">
+          <span class="block text-lg font-bold font-syne tracking-normal text-paper mb-1">FM Radio</span>
+          <span>Warm Airwaves</span>
+        </button>
+        <button type="button"
+          class="mic-preset-tab p-4 rounded-2xl border border-line text-fog hover:border-amber/50 font-mono text-xs uppercase tracking-wider transition-all text-center"
+          data-mode="dubbing">
+          <span class="block text-lg font-bold font-syne tracking-normal text-paper mb-1">Dubbing</span>
+          <span>Character Booth</span>
+        </button>
+        <button type="button"
+          class="mic-preset-tab p-4 rounded-2xl border border-line text-fog hover:border-amber/50 font-mono text-xs uppercase tracking-wider transition-all text-center"
+          data-mode="trailer">
+          <span class="block text-lg font-bold font-syne tracking-normal text-paper mb-1">Movie Trailer</span>
+          <span>Cinematic Bass</span>
+        </button>
+      </div>
+
+      <!-- Simulator Display Box -->
+      <div class="bg-ink/90 rounded-2xl p-8 border border-line grid md:grid-cols-[1fr_260px] gap-8 items-center">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <span id="sim-mic-badge"
+              class="font-mono text-[10px] uppercase tracking-widest px-3 py-1 rounded-full border border-amber/30 text-amber bg-amber/10">Commercial
+              / High-Fidelity</span>
+            <span id="sim-mic-freq" class="font-mono text-[10px] text-fog">20Hz - 20kHz &bull; Ultra Clean Highs</span>
+          </div>
+          <h3 id="sim-mic-title" class="font-syne font-bold text-2xl sm:text-3xl text-paper mb-4">Studio Condenser Mic
+          </h3>
+          <p id="sim-mic-script" class="font-display italic text-2xl text-amber leading-snug mb-6">
+            "Jamuna Future Park — Where extraordinary experiences begin every single day."
           </p>
-          <div class="flex flex-wrap gap-3">
-            <span class="px-4 py-1.5 rounded-full border border-line bg-surface font-mono text-xs uppercase tracking-wider text-paper">SARA Lifestyle</span>
-            <span class="px-4 py-1.5 rounded-full border border-line bg-surface font-mono text-xs uppercase tracking-wider text-paper">Raw Nation</span>
-            <span class="px-4 py-1.5 rounded-full border border-line bg-surface font-mono text-xs uppercase tracking-wider text-amber">+ More</span>
-          </div>
         </div>
-      </div>
 
-      <!-- Card 2: Media Direction -->
-      <div class="glass-card rounded-3xl overflow-hidden group" data-reveal="right" data-tilt>
-        <div class="relative aspect-[16/9] overflow-hidden">
-          <img src="images/about_rishi_studio.png" alt="Rishi Abir Media & Branding Leadership" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent"></div>
-          <span class="absolute top-4 left-4 font-mono text-[10px] uppercase tracking-widest px-3 py-1 rounded-full bg-ink/80 border border-line text-violet backdrop-blur-md">Media Direction</span>
-        </div>
-        <div class="p-8 sm:p-10">
-          <h3 class="font-syne font-bold text-3xl text-paper mb-3">Jamuna Future Park &amp; News Outlets</h3>
-          <p class="text-fog text-base font-light leading-relaxed mb-6">
-            Directing brand campaigns and media operations at Asia's largest shopping complex alongside major news coverage.
-          </p>
-          <div class="flex flex-wrap gap-3">
-            <span class="px-4 py-1.5 rounded-full border border-line bg-surface font-mono text-xs uppercase tracking-wider text-paper">Jamuna Future Park</span>
-            <span class="px-4 py-1.5 rounded-full border border-line bg-surface font-mono text-xs uppercase tracking-wider text-paper">Prothom Alo</span>
-            <span class="px-4 py-1.5 rounded-full border border-line bg-surface font-mono text-xs uppercase tracking-wider text-violet">FM Radio</span>
-          </div>
+        <div class="flex flex-col gap-4 text-center">
+          <button id="sim-play-btn" type="button"
+            class="play-demo-btn btn-shine py-4 px-6 rounded-2xl bg-gradient-to-r from-violet to-amber text-ink font-syne font-bold text-sm uppercase tracking-wider hover:scale-105 transition-all shadow-xl shadow-violet/20 flex items-center justify-center gap-2"
+            data-pitch="140" data-preset="condenser">
+            <svg class="play-icon w-5 h-5 text-ink" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" fill="currentColor" />
+            </svg>
+            <span class="play-label">Play Mic Sample</span>
+          </button>
+          <span class="font-mono text-[10px] text-fog">Web Audio API Synth Engine</span>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ CAREER TIMELINE ============ -->
-<section id="career" class="max-w-7xl mx-auto px-6 py-28 md:py-36">
-  <div class="max-w-3xl mb-16" data-reveal="up">
-    <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber mb-3">Evolution</p>
-    <h2 class="font-syne font-bold text-4xl sm:text-5xl text-paper">Career Journey.</h2>
-  </div>
-
-  <ol id="timeline" class="relative ml-4 md:ml-8 border-l border-transparent">
-    <div id="timeline-line" aria-hidden="true"></div>
-
-    <li class="mb-14 ml-8 relative" data-reveal="left">
-      <span class="icon-badge absolute -left-[53px] top-0 w-10 h-10 rounded-full bg-ink border-2 border-violet flex items-center justify-center text-violet shadow-lg shadow-violet/30">
-        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="13" r="6" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="13" r="1.5" fill="currentColor"/></svg>
-      </span>
-      <span class="font-mono text-xs text-amber uppercase tracking-widest block mb-1">Early Roots</span>
-      <h3 class="font-syne font-bold text-2xl text-paper mb-2">FM Radio Presenter</h3>
-      <p class="text-fog leading-relaxed max-w-2xl font-light">Built a celebrated on-air presence, mastering cadence, vocal control, and live audience connection across broadcast radio.</p>
-    </li>
-
-    <li class="mb-14 ml-8 relative" data-reveal="right">
-      <span class="icon-badge absolute -left-[53px] top-0 w-10 h-10 rounded-full bg-ink border-2 border-amber flex items-center justify-center text-amber shadow-lg shadow-amber/30">
-        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"><rect x="9" y="3" width="6" height="11" rx="3" stroke="currentColor" stroke-width="2"/><path d="M5 11a7 7 0 0014 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-      </span>
-      <span class="font-mono text-xs text-amber uppercase tracking-widest block mb-1">Expansion</span>
-      <h3 class="font-syne font-bold text-2xl text-paper mb-2">Voice Artist &amp; Fashion Model</h3>
-      <p class="text-fog leading-relaxed max-w-2xl font-light">Expanded into national commercial voiceovers, international cartoon dubbing, and brand modeling for SARA and Raw Nation.</p>
-    </li>
-
-    <li class="mb-14 ml-8 relative" data-reveal="left">
-      <span class="icon-badge absolute -left-[53px] top-0 w-10 h-10 rounded-full bg-ink border-2 border-roseAccent flex items-center justify-center text-roseAccent shadow-lg shadow-roseAccent/30">
-        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="15" rx="1.5" stroke="currentColor" stroke-width="2"/><path d="M7 9h6M7 12h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-      </span>
-      <span class="font-mono text-xs text-amber uppercase tracking-widest block mb-1">Media Recognition</span>
-      <h3 class="font-syne font-bold text-2xl text-paper mb-2">Media &amp; Press Collaborations</h3>
-      <p class="text-fog leading-relaxed max-w-2xl font-light">Collaborated on features and branding initiatives with leading media outlets including Prothom Alo.</p>
-    </li>
-
-    <li class="ml-8 relative" data-reveal="right">
-      <span class="icon-badge absolute -left-[53px] top-0 w-10 h-10 rounded-full bg-ink border-2 border-amber flex items-center justify-center text-amber shadow-lg shadow-amber/30">
-        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"><path d="M4 21V9l8-5 8 5v12" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-      </span>
-      <span class="font-mono text-xs text-amber uppercase tracking-widest block mb-1">Current Leadership</span>
-      <h3 class="font-syne font-bold text-2xl text-paper mb-2">Senior Executive Officer — Media &amp; Branding</h3>
-      <p class="text-fog leading-relaxed max-w-2xl font-light">Directing high-impact media and branding strategies for Jamuna Future Park — Asia's largest shopping mall.</p>
-    </li>
-  </ol>
-</section>
-
-<!-- ============ PHOTOGRAPHY & ART GALLERY ============ -->
-<section id="photography" class="bg-surface/60 border-y border-line/60 py-28 md:py-36">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12" data-reveal="up">
-      <div>
-        <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber mb-3">Visual Artistry</p>
-        <h2 class="font-syne font-bold text-4xl sm:text-5xl text-paper">Behind the Lens &amp; Canvas.</h2>
-      </div>
-      <p class="text-fog max-w-md text-sm font-light">
-        A curated showcase of street photography, studio portraits, brand modeling, and abstract paintings.
-      </p>
-    </div>
-
-    <!-- Gallery Filter Buttons -->
-    <div class="flex flex-wrap gap-3 mb-12" data-reveal="up">
-      <button type="button" class="gallery-filter-btn px-6 py-2.5 rounded-full bg-amber text-ink font-semibold text-xs font-mono uppercase tracking-wider transition-all" data-filter="all">
-        All Works (5)
-      </button>
-      <button type="button" class="gallery-filter-btn px-6 py-2.5 rounded-full bg-surface border border-line text-fog hover:text-paper text-xs font-mono uppercase tracking-wider transition-all" data-filter="street">
-        Street Photography
-      </button>
-      <button type="button" class="gallery-filter-btn px-6 py-2.5 rounded-full bg-surface border border-line text-fog hover:text-paper text-xs font-mono uppercase tracking-wider transition-all" data-filter="painting">
-        Fine Art Painting
-      </button>
-      <button type="button" class="gallery-filter-btn px-6 py-2.5 rounded-full bg-surface border border-line text-fog hover:text-paper text-xs font-mono uppercase tracking-wider transition-all" data-filter="fashion">
-        Fashion Modeling
-      </button>
-      <button type="button" class="gallery-filter-btn px-6 py-2.5 rounded-full bg-surface border border-line text-fog hover:text-paper text-xs font-mono uppercase tracking-wider transition-all" data-filter="studio">
-        Voice Studio
-      </button>
-    </div>
-
-    <!-- Gallery Grid -->
-    <div id="gallery" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Item 1: Street Photography -->
-      <div class="gallery-item-wrapper" data-category="street" data-reveal="scale">
-        <button type="button" class="gallery-item w-full aspect-[4/5] rounded-3xl overflow-hidden border border-line bg-surface relative group block text-left" data-full="images/photography_dhaka_street.png" data-caption="Cinematic Dhaka Street Twilight — Leica 35mm Style">
-          <img src="images/photography_dhaka_street.png" alt="Dhaka Street Photography" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700">
-          <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
-            <span class="font-mono text-[10px] text-amber uppercase tracking-widest block mb-1">Street Photography</span>
-            <p class="font-syne font-bold text-lg text-paper">Dhaka Twilight Reflections</p>
-          </div>
-        </button>
-      </div>
-
-      <!-- Item 2: Fine Art Painting -->
-      <div class="gallery-item-wrapper" data-category="painting" data-reveal="scale">
-        <button type="button" class="gallery-item w-full aspect-[4/5] rounded-3xl overflow-hidden border border-line bg-surface relative group block text-left" data-full="images/art_canvas_painting.png" data-caption="Abstract Impressionist Oil on Canvas — Off the Clock Artistry">
-          <img src="images/art_canvas_painting.png" alt="Abstract Canvas Painting" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700">
-          <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
-            <span class="font-mono text-[10px] text-violet uppercase tracking-widest block mb-1">Fine Art</span>
-            <p class="font-syne font-bold text-lg text-paper">Textured Oil on Canvas</p>
-          </div>
-        </button>
-      </div>
-
-      <!-- Item 3: Fashion Modeling -->
-      <div class="gallery-item-wrapper" data-category="fashion" data-reveal="scale">
-        <button type="button" class="gallery-item w-full aspect-[4/5] rounded-3xl overflow-hidden border border-line bg-surface relative group block text-left" data-full="images/brand_model_sara.png" data-caption="Fashion Modeling Shoot for Premium Apparel Brand">
-          <img src="images/brand_model_sara.png" alt="Fashion Modeling Shoot" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700">
-          <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
-            <span class="font-mono text-[10px] text-amber uppercase tracking-widest block mb-1">Fashion Modeling</span>
-            <p class="font-syne font-bold text-lg text-paper">Brand Campaign Feature</p>
-          </div>
-        </button>
-      </div>
-
-      <!-- Item 4: Voice Studio -->
-      <div class="gallery-item-wrapper" data-category="studio" data-reveal="scale">
-        <button type="button" class="gallery-item w-full aspect-[4/5] rounded-3xl overflow-hidden border border-line bg-surface relative group block text-left" data-full="images/about_rishi_studio.png" data-caption="Media Studio Setup & Voiceover Control Room">
-          <img src="images/about_rishi_studio.png" alt="Voice Studio Session" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700">
-          <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
-            <span class="font-mono text-[10px] text-roseAccent uppercase tracking-widest block mb-1">Studio Work</span>
-            <p class="font-syne font-bold text-lg text-paper">Media Control Session</p>
-          </div>
-        </button>
-      </div>
-
-      <!-- Item 5: Hero Mic -->
-      <div class="gallery-item-wrapper" data-category="studio" data-reveal="scale">
-        <button type="button" class="gallery-item w-full aspect-[4/5] rounded-3xl overflow-hidden border border-line bg-surface relative group block text-left" data-full="images/hero_rishi_mic.png" data-caption="Broadcast Studio Microphone & Condenser Session">
-          <img src="images/hero_rishi_mic.png" alt="Studio Condenser Microphone" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700">
-          <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
-            <span class="font-mono text-[10px] text-amber uppercase tracking-widest block mb-1">Microphone Setup</span>
-            <p class="font-syne font-bold text-lg text-paper">Studio Condenser Glow</p>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ LIGHTBOX MODAL ============ -->
-<div id="lightbox" class="hidden fixed inset-0 z-[100] bg-ink/95 backdrop-blur-xl items-center justify-center p-6">
-  <button id="lightbox-close" type="button" aria-label="Close preview" class="absolute top-6 right-6 w-12 h-12 rounded-full border border-line bg-surface/80 text-paper flex items-center justify-center hover:border-amber hover:text-amber transition-colors">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-  </button>
-  <button id="lightbox-prev" type="button" aria-label="Previous photo" class="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-line bg-surface/80 text-paper flex items-center justify-center hover:border-amber hover:text-amber transition-colors">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </button>
-  <button id="lightbox-next" type="button" aria-label="Next photo" class="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-line bg-surface/80 text-paper flex items-center justify-center hover:border-amber hover:text-amber transition-colors">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </button>
-  
-  <div class="max-w-4xl text-center">
-    <img id="lightbox-img" src="" alt="" class="max-h-[75vh] max-w-[90vw] rounded-2xl border border-line object-contain mx-auto shadow-2xl mb-4">
-    <p id="lightbox-title" class="font-syne font-bold text-xl text-paper mb-1"></p>
-    <p id="lightbox-counter" class="font-mono text-xs text-amber"></p>
-  </div>
-</div>
-
-<!-- ============ HOBBIES & OFF THE CLOCK ============ -->
-<section class="max-w-7xl mx-auto px-6 py-28 md:py-36">
-  <div class="max-w-3xl mb-16" data-reveal="up">
-    <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber mb-3">Off The Clock</p>
-    <h2 class="font-syne font-bold text-4xl sm:text-5xl text-paper">Creative Passions.</h2>
-  </div>
-
-  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-    <div class="glass-card p-8 rounded-3xl group" data-reveal="up">
-      <div class="icon-badge w-12 h-12 rounded-2xl border border-line bg-ink flex items-center justify-center text-amber mb-6">
-        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M9 18V5l10-2v13" stroke="currentColor" stroke-width="1.8"/><circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="16" r="3" stroke="currentColor" stroke-width="1.8"/></svg>
-      </div>
-      <h3 class="font-syne font-bold text-xl text-paper mb-2">Old Records &amp; Songs</h3>
-      <p class="text-fog text-sm font-light">Losing hours to vinyl records and timeless Bengali melodies.</p>
-    </div>
-
-    <div class="glass-card p-8 rounded-3xl group" data-reveal="up">
-      <div class="icon-badge w-12 h-12 rounded-2xl border border-line bg-ink flex items-center justify-center text-violet mb-6">
-        <svg class="icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="1.5" stroke="currentColor" stroke-width="1.8"/><path d="M3 9h18" stroke="currentColor" stroke-width="1.6"/></svg>
-      </div>
-      <h3 class="font-syne font-bold text-xl text-paper mb-2">Art Cinema &amp; Film</h3>
-      <p class="text-fog text-sm font-light">Quiet appreciation for classic international and parallel cinema.</p>
-    </div>
-
-    <div class="glass-card p-8 rounded-3xl group" data-reveal="up">
-      <div class="icon-badge w-12 h-12 rounded-2xl border border-line bg-ink flex items-center justify-center text-roseAccent mb-6">
-        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M12 3c-4.5 0-8 3.5-8 7.5A4.5 4.5 0 008.5 15c.5 0 1-.4 1-1s-.5-1-1-1a1 1 0 010-2 1 1 0 100-2 1 1 0 111-1 8 8 0 007.9-1.4C18.5 4.8 15.6 3 12 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-      </div>
-      <h3 class="font-syne font-bold text-xl text-paper mb-2">Abstract Painting</h3>
-      <p class="text-fog text-sm font-light">Expressing emotions through oil paints and dynamic textures.</p>
-    </div>
-
-    <div class="glass-card p-8 rounded-3xl group" data-reveal="up">
-      <div class="icon-badge w-12 h-12 rounded-2xl border border-line bg-ink flex items-center justify-center text-amber mb-6">
-        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M4 7h3l1.5-2h7L17 7h3a1 1 0 011 1v10a1 1 0 01-1 1H4a1 1 0 01-1-1V8a1 1 0 011-1z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="13" r="3.5" stroke="currentColor" stroke-width="1.8"/></svg>
-      </div>
-      <h3 class="font-syne font-bold text-xl text-paper mb-2">Street Vlogging</h3>
-      <p class="text-fog text-sm font-light">Documenting everyday city textures and human stories through a lens.</p>
-    </div>
-
-    <div class="glass-card p-8 rounded-3xl group" data-reveal="up">
-      <div class="icon-badge w-12 h-12 rounded-2xl border border-line bg-ink flex items-center justify-center text-violet mb-6">
-        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M12 21c4-3 6-6.5 6-10a6 6 0 10-12 0c0 3.5 2 7 6 10z" stroke="currentColor" stroke-width="1.8"/></svg>
-      </div>
-      <h3 class="font-syne font-bold text-xl text-paper mb-2">Gardening</h3>
-      <p class="text-fog text-sm font-light">Cultivating quiet greenery and patience, measured season by season.</p>
-    </div>
-
-    <div class="glass-card p-8 rounded-3xl group" data-reveal="up">
-      <div class="icon-badge w-12 h-12 rounded-2xl border border-line bg-ink flex items-center justify-center text-amber mb-6">
-        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M4 12h16v2a6 6 0 01-6 6H10a6 6 0 01-6-6v-2z" stroke="currentColor" stroke-width="1.8"/><path d="M9 12V8a1.5 1.5 0 013 0M14 12V6a1.5 1.5 0 013 0v6" stroke="currentColor" stroke-width="1.6"/></svg>
-      </div>
-      <h3 class="font-syne font-bold text-xl text-paper mb-2">Artisan Cooking</h3>
-      <p class="text-fog text-sm font-light">Slow recipes, rich spices, and unhurried evening meals with friends.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CONTACT & BOOKING ============ -->
-<section id="contact" class="bg-surface/60 border-t border-line/60 py-28 md:py-36">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid lg:grid-cols-2 gap-16">
-      <div data-reveal="right">
-        <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber mb-3">Collaborate &amp; Book</p>
-        <h2 class="font-syne font-bold text-4xl sm:text-5xl text-paper mb-6">Let's Create Something Iconic.</h2>
-        <p class="text-fog text-base sm:text-lg leading-relaxed font-light mb-8">
-          Available for commercial voiceovers, dubbed TV series, fashion modeling campaigns, and media consulting.
+  <!-- ============ BRAND & MEDIA DIRECTION ============ -->
+  <section id="brand" class="bg-surface/60 border-y border-line/60 py-28 md:py-36">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl mb-16" data-reveal="up">
+        <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber mb-3">Modeling &amp; Media Direction</p>
+        <h2 class="font-syne font-bold text-4xl sm:text-5xl text-paper mb-4">Faces of Familiar Brands.</h2>
+        <p class="text-fog text-base font-light">
+          Combining high-fashion modeling presence with senior executive media strategy for Asia's flagship
+          destinations.
         </p>
-
-        <div class="space-y-4 font-mono text-sm mb-8">
-          <div class="flex items-center gap-3 text-fog">
-            <span class="w-10 h-10 rounded-xl border border-line bg-surface flex items-center justify-center text-amber">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.8"/></svg>
-            </span>
-            <a href="mailto:hello@rishiabir.com" class="text-paper hover:text-amber transition-colors">hello@rishiabir.com</a>
-          </div>
-          <div class="flex items-center gap-3 text-fog">
-            <span class="w-10 h-10 rounded-xl border border-line bg-surface flex items-center justify-center text-violet">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.2 7-11.5A7 7 0 105 9.5C5 14.8 12 21 12 21z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg>
-            </span>
-            <span class="text-paper">Dhaka, Bangladesh</span>
-          </div>
-        </div>
-
-        <div class="flex gap-4">
-          <a href="#" class="w-12 h-12 rounded-2xl border border-line bg-surface flex items-center justify-center text-fog hover:text-amber hover:border-amber hover:-translate-y-1 transition-all" aria-label="Instagram">
-            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg>
-          </a>
-          <a href="#" class="w-12 h-12 rounded-2xl border border-line bg-surface flex items-center justify-center text-fog hover:text-amber hover:border-amber hover:-translate-y-1 transition-all" aria-label="Facebook">
-            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M14 21v-7h2.5l.5-3H14V9a1.5 1.5 0 011.5-1.5H17V4.5A16 16 0 0014.8 4 4 4 0 0011 8.2V11H8.5v3H11v7" stroke="currentColor" stroke-width="1.8"/></svg>
-          </a>
-          <a href="#" class="w-12 h-12 rounded-2xl border border-line bg-surface flex items-center justify-center text-fog hover:text-amber hover:border-amber hover:-translate-y-1 transition-all" aria-label="YouTube">
-            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="4" stroke="currentColor" stroke-width="1.8"/><path d="M10.5 9.5l5 2.5-5 2.5v-5z" fill="currentColor"/></svg>
-          </a>
-          <a href="#" class="w-12 h-12 rounded-2xl border border-line bg-surface flex items-center justify-center text-fog hover:text-amber hover:border-amber hover:-translate-y-1 transition-all" aria-label="LinkedIn">
-            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/><circle cx="8" cy="8.5" r="1" fill="currentColor"/><path d="M8 11v6M12 11v6M12 13.5c0-1.5 1-2.5 2.5-2.5S17 12 17 13.5V17" stroke="currentColor" stroke-width="1.8"/></svg>
-          </a>
-        </div>
       </div>
 
-      <!-- Interactive Form -->
-      <form id="contact-form" data-reveal="left" class="glass-card p-8 sm:p-10 rounded-3xl space-y-6">
-        <input type="hidden" id="project-type-input" name="project_type" value="Voiceover">
-
-        <div>
-          <label class="block font-mono text-xs uppercase tracking-widest text-fog mb-3">Project Discipline</label>
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
-            <button type="button" class="project-type-chip border border-violet bg-violet/20 text-violet px-3 py-2 rounded-xl font-mono text-[11px] text-center transition-all" data-type="Voiceover">Voiceover</button>
-            <button type="button" class="project-type-chip border border-line bg-surface text-fog px-3 py-2 rounded-xl font-mono text-[11px] text-center transition-all" data-type="Modeling">Modeling</button>
-            <button type="button" class="project-type-chip border border-line bg-surface text-fog px-3 py-2 rounded-xl font-mono text-[11px] text-center transition-all" data-type="Branding">Branding</button>
-            <button type="button" class="project-type-chip border border-line bg-surface text-fog px-3 py-2 rounded-xl font-mono text-[11px] text-center transition-all" data-type="Media">Media Directing</button>
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- Card 1: Brand Modeling -->
+        <div class="glass-card rounded-3xl overflow-hidden group" data-reveal="left" data-tilt>
+          <div class="relative aspect-[16/9] overflow-hidden">
+            <img src="images/brand_model_sara.png" alt="Rishi Abir Fashion Modeling Shoot"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent"></div>
+            <span
+              class="absolute top-4 left-4 font-mono text-[10px] uppercase tracking-widest px-3 py-1 rounded-full bg-ink/80 border border-line text-amber backdrop-blur-md">Fashion
+              Modeling</span>
+          </div>
+          <div class="p-8 sm:p-10">
+            <h3 class="font-syne font-bold text-3xl text-paper mb-3">Apparel &amp; Fashion Modeling</h3>
+            <p class="text-fog text-base font-light leading-relaxed mb-6">
+              Featured model for premier Bangladeshi fashion houses, capturing contemporary style and masculine
+              elegance.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <span
+                class="px-4 py-1.5 rounded-full border border-line bg-surface font-mono text-xs uppercase tracking-wider text-paper">SARA
+                Lifestyle</span>
+              <span
+                class="px-4 py-1.5 rounded-full border border-line bg-surface font-mono text-xs uppercase tracking-wider text-paper">Raw
+                Nation</span>
+              <span
+                class="px-4 py-1.5 rounded-full border border-line bg-surface font-mono text-xs uppercase tracking-wider text-amber">+
+                More</span>
+            </div>
           </div>
         </div>
 
-        <div>
-          <label for="name" class="block font-mono text-xs uppercase tracking-widest text-fog mb-2">Your Name / Organization</label>
-          <input id="name" name="name" type="text" required class="w-full bg-ink border border-line rounded-xl px-4 py-3.5 text-paper placeholder-fog/50 focus:outline-none focus:border-amber transition-colors" placeholder="e.g. Acme Media Corp">
+        <!-- Card 2: Media Direction -->
+        <div class="glass-card rounded-3xl overflow-hidden group" data-reveal="right" data-tilt>
+          <div class="relative aspect-[16/9] overflow-hidden">
+            <img src="images/about_rishi_studio.png" alt="Rishi Abir Media & Branding Leadership"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent"></div>
+            <span
+              class="absolute top-4 left-4 font-mono text-[10px] uppercase tracking-widest px-3 py-1 rounded-full bg-ink/80 border border-line text-violet backdrop-blur-md">Media
+              Direction</span>
+          </div>
+          <div class="p-8 sm:p-10">
+            <h3 class="font-syne font-bold text-3xl text-paper mb-3">Jamuna Future Park &amp; News Outlets</h3>
+            <p class="text-fog text-base font-light leading-relaxed mb-6">
+              Directing brand campaigns and media operations at Asia's largest shopping complex alongside major news
+              coverage.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <span
+                class="px-4 py-1.5 rounded-full border border-line bg-surface font-mono text-xs uppercase tracking-wider text-paper">Jamuna
+                Future Park</span>
+              <span
+                class="px-4 py-1.5 rounded-full border border-line bg-surface font-mono text-xs uppercase tracking-wider text-paper">Prothom
+                Alo</span>
+              <span
+                class="px-4 py-1.5 rounded-full border border-line bg-surface font-mono text-xs uppercase tracking-wider text-violet">FM
+                Radio</span>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ============ CAREER TIMELINE ============ -->
+  <section id="career" class="max-w-7xl mx-auto px-6 py-28 md:py-36">
+    <div class="max-w-3xl mb-16" data-reveal="up">
+      <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber mb-3">Evolution</p>
+      <h2 class="font-syne font-bold text-4xl sm:text-5xl text-paper">Career Journey.</h2>
+    </div>
+
+    <ol id="timeline" class="relative ml-4 md:ml-8 border-l border-transparent">
+      <div id="timeline-line" aria-hidden="true"></div>
+
+      <li class="mb-14 ml-8 relative" data-reveal="left">
+        <span
+          class="icon-badge absolute -left-[53px] top-0 w-10 h-10 rounded-full bg-ink border-2 border-violet flex items-center justify-center text-violet shadow-lg shadow-violet/30">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="13" r="6" stroke="currentColor" stroke-width="2" />
+            <circle cx="12" cy="13" r="1.5" fill="currentColor" />
+          </svg>
+        </span>
+        <span class="font-mono text-xs text-amber uppercase tracking-widest block mb-1">Early Roots</span>
+        <h3 class="font-syne font-bold text-2xl text-paper mb-2">FM Radio Presenter</h3>
+        <p class="text-fog leading-relaxed max-w-2xl font-light">Built a celebrated on-air presence, mastering cadence,
+          vocal control, and live audience connection across broadcast radio.</p>
+      </li>
+
+      <li class="mb-14 ml-8 relative" data-reveal="right">
+        <span
+          class="icon-badge absolute -left-[53px] top-0 w-10 h-10 rounded-full bg-ink border-2 border-amber flex items-center justify-center text-amber shadow-lg shadow-amber/30">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+            <rect x="9" y="3" width="6" height="11" rx="3" stroke="currentColor" stroke-width="2" />
+            <path d="M5 11a7 7 0 0014 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </span>
+        <span class="font-mono text-xs text-amber uppercase tracking-widest block mb-1">Expansion</span>
+        <h3 class="font-syne font-bold text-2xl text-paper mb-2">Voice Artist &amp; Fashion Model</h3>
+        <p class="text-fog leading-relaxed max-w-2xl font-light">Expanded into national commercial voiceovers,
+          international cartoon dubbing, and brand modeling for SARA and Raw Nation.</p>
+      </li>
+
+      <li class="mb-14 ml-8 relative" data-reveal="left">
+        <span
+          class="icon-badge absolute -left-[53px] top-0 w-10 h-10 rounded-full bg-ink border-2 border-roseAccent flex items-center justify-center text-roseAccent shadow-lg shadow-roseAccent/30">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="5" width="18" height="15" rx="1.5" stroke="currentColor" stroke-width="2" />
+            <path d="M7 9h6M7 12h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+        </span>
+        <span class="font-mono text-xs text-amber uppercase tracking-widest block mb-1">Media Recognition</span>
+        <h3 class="font-syne font-bold text-2xl text-paper mb-2">Media &amp; Press Collaborations</h3>
+        <p class="text-fog leading-relaxed max-w-2xl font-light">Collaborated on features and branding initiatives with
+          leading media outlets including Prothom Alo.</p>
+      </li>
+
+      <li class="ml-8 relative" data-reveal="right">
+        <span
+          class="icon-badge absolute -left-[53px] top-0 w-10 h-10 rounded-full bg-ink border-2 border-amber flex items-center justify-center text-amber shadow-lg shadow-amber/30">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+            <path d="M4 21V9l8-5 8 5v12" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+            <path d="M9 21v-6h6v6" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+          </svg>
+        </span>
+        <span class="font-mono text-xs text-amber uppercase tracking-widest block mb-1">Current Leadership</span>
+        <h3 class="font-syne font-bold text-2xl text-paper mb-2">Senior Executive Officer — Media &amp; Branding</h3>
+        <p class="text-fog leading-relaxed max-w-2xl font-light">Directing high-impact media and branding strategies for
+          Jamuna Future Park — Asia's largest shopping mall.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ PHOTOGRAPHY & ART GALLERY ============ -->
+  <section id="photography" class="bg-surface/60 border-y border-line/60 py-28 md:py-36">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12" data-reveal="up">
         <div>
-          <label for="email" class="block font-mono text-xs uppercase tracking-widest text-fog mb-2">Email Address</label>
-          <input id="email" name="email" type="email" required class="w-full bg-ink border border-line rounded-xl px-4 py-3.5 text-paper placeholder-fog/50 focus:outline-none focus:border-amber transition-colors" placeholder="you@company.com">
+          <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber mb-3">Visual Artistry</p>
+          <h2 class="font-syne font-bold text-4xl sm:text-5xl text-paper">Behind the Lens &amp; Canvas.</h2>
         </div>
+        <p class="text-fog max-w-md text-sm font-light">
+          A curated showcase of street photography, studio portraits, brand modeling, and abstract paintings.
+        </p>
+      </div>
 
-        <div>
-          <label for="message" class="block font-mono text-xs uppercase tracking-widest text-fog mb-2">Project Brief &amp; Script Details</label>
-          <textarea id="message" name="message" required rows="4" class="w-full bg-ink border border-line rounded-xl px-4 py-3.5 text-paper placeholder-fog/50 focus:outline-none focus:border-amber transition-colors" placeholder="Tell us about your brand vision, script length, or booking timeline..."></textarea>
-        </div>
-
-        <button type="submit" class="btn-shine w-full py-4 rounded-xl bg-gradient-to-r from-violet via-amber to-violet text-ink font-syne font-bold text-sm uppercase tracking-wider hover:opacity-95 shadow-xl shadow-violet/20 transition-all">
-          Send Project Inquiry
+      <!-- Gallery Filter Buttons -->
+      <div class="flex flex-wrap gap-3 mb-12" data-reveal="up">
+        <button type="button"
+          class="gallery-filter-btn px-6 py-2.5 rounded-full bg-amber text-ink font-semibold text-xs font-mono uppercase tracking-wider transition-all"
+          data-filter="all">
+          All Works (5)
         </button>
+        <button type="button"
+          class="gallery-filter-btn px-6 py-2.5 rounded-full bg-surface border border-line text-fog hover:text-paper text-xs font-mono uppercase tracking-wider transition-all"
+          data-filter="street">
+          Street Photography
+        </button>
+        <button type="button"
+          class="gallery-filter-btn px-6 py-2.5 rounded-full bg-surface border border-line text-fog hover:text-paper text-xs font-mono uppercase tracking-wider transition-all"
+          data-filter="painting">
+          Fine Art Painting
+        </button>
+        <button type="button"
+          class="gallery-filter-btn px-6 py-2.5 rounded-full bg-surface border border-line text-fog hover:text-paper text-xs font-mono uppercase tracking-wider transition-all"
+          data-filter="fashion">
+          Fashion Modeling
+        </button>
+        <button type="button"
+          class="gallery-filter-btn px-6 py-2.5 rounded-full bg-surface border border-line text-fog hover:text-paper text-xs font-mono uppercase tracking-wider transition-all"
+          data-filter="studio">
+          Voice Studio
+        </button>
+      </div>
 
-        <p id="form-status" class="font-mono text-xs text-amber hidden text-center p-3 rounded-xl bg-amber/10 border border-amber/30"></p>
-      </form>
-    </div>
-  </div>
-</section>
+      <!-- Gallery Grid -->
+      <div id="gallery" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Item 1: Street Photography -->
+        <div class="gallery-item-wrapper" data-category="street" data-reveal="scale">
+          <button type="button"
+            class="gallery-item w-full aspect-[4/5] rounded-3xl overflow-hidden border border-line bg-surface relative group block text-left"
+            data-full="images/photography_dhaka_street.png"
+            data-caption="Cinematic Dhaka Street Twilight — Leica 35mm Style">
+            <img src="images/photography_dhaka_street.png" alt="Dhaka Street Photography"
+              class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
+              <span class="font-mono text-[10px] text-amber uppercase tracking-widest block mb-1">Street
+                Photography</span>
+              <p class="font-syne font-bold text-lg text-paper">Dhaka Twilight Reflections</p>
+            </div>
+          </button>
+        </div>
 
-<!-- ============ FOOTER ============ -->
-<footer class="border-t border-line/60 bg-ink">
-  <div class="max-w-7xl mx-auto px-6 py-12 flex flex-col sm:flex-row items-center justify-between gap-6">
-    <div class="flex items-center gap-3">
-      <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-violet to-amber p-0.5">
-        <div class="w-full h-full bg-ink rounded-[6px] flex items-center justify-center font-syne font-bold text-amber text-xs">
-          RA
+        <!-- Item 2: Fine Art Painting -->
+        <div class="gallery-item-wrapper" data-category="painting" data-reveal="scale">
+          <button type="button"
+            class="gallery-item w-full aspect-[4/5] rounded-3xl overflow-hidden border border-line bg-surface relative group block text-left"
+            data-full="images/art_canvas_painting.png"
+            data-caption="Abstract Impressionist Oil on Canvas — Off the Clock Artistry">
+            <img src="images/art_canvas_painting.png" alt="Abstract Canvas Painting"
+              class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
+              <span class="font-mono text-[10px] text-violet uppercase tracking-widest block mb-1">Fine Art</span>
+              <p class="font-syne font-bold text-lg text-paper">Textured Oil on Canvas</p>
+            </div>
+          </button>
+        </div>
+
+        <!-- Item 3: Fashion Modeling -->
+        <div class="gallery-item-wrapper" data-category="fashion" data-reveal="scale">
+          <button type="button"
+            class="gallery-item w-full aspect-[4/5] rounded-3xl overflow-hidden border border-line bg-surface relative group block text-left"
+            data-full="images/brand_model_sara.png" data-caption="Fashion Modeling Shoot for Premium Apparel Brand">
+            <img src="images/brand_model_sara.png" alt="Fashion Modeling Shoot"
+              class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
+              <span class="font-mono text-[10px] text-amber uppercase tracking-widest block mb-1">Fashion
+                Modeling</span>
+              <p class="font-syne font-bold text-lg text-paper">Brand Campaign Feature</p>
+            </div>
+          </button>
+        </div>
+
+        <!-- Item 4: Voice Studio -->
+        <div class="gallery-item-wrapper" data-category="studio" data-reveal="scale">
+          <button type="button"
+            class="gallery-item w-full aspect-[4/5] rounded-3xl overflow-hidden border border-line bg-surface relative group block text-left"
+            data-full="images/about_rishi_studio.png" data-caption="Media Studio Setup & Voiceover Control Room">
+            <img src="images/about_rishi_studio.png" alt="Voice Studio Session"
+              class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
+              <span class="font-mono text-[10px] text-roseAccent uppercase tracking-widest block mb-1">Studio
+                Work</span>
+              <p class="font-syne font-bold text-lg text-paper">Media Control Session</p>
+            </div>
+          </button>
+        </div>
+
+        <!-- Item 5: Hero Mic -->
+        <div class="gallery-item-wrapper" data-category="studio" data-reveal="scale">
+          <button type="button"
+            class="gallery-item w-full aspect-[4/5] rounded-3xl overflow-hidden border border-line bg-surface relative group block text-left"
+            data-full="images/hero_rishi_mic.png" data-caption="Broadcast Studio Microphone & Condenser Session">
+            <img src="images/hero_rishi_mic.png" alt="Studio Condenser Microphone"
+              class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700">
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end">
+              <span class="font-mono text-[10px] text-amber uppercase tracking-widest block mb-1">Microphone
+                Setup</span>
+              <p class="font-syne font-bold text-lg text-paper">Studio Condenser Glow</p>
+            </div>
+          </button>
         </div>
       </div>
-      <p class="font-mono text-xs text-fog">&copy; <span id="year"></span> Rishi Abir. All rights reserved.</p>
     </div>
-    <p class="font-display italic text-lg text-fog">Voice Artist &bull; Model &bull; Media Director</p>
-  </div>
-</footer>
+  </section>
 
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="js/main.js"></script>
+  <!-- ============ LIGHTBOX MODAL ============ -->
+  <div id="lightbox" class="hidden fixed inset-0 z-[100] bg-ink/95 backdrop-blur-xl items-center justify-center p-6">
+    <button id="lightbox-close" type="button" aria-label="Close preview"
+      class="absolute top-6 right-6 w-12 h-12 rounded-full border border-line bg-surface/80 text-paper flex items-center justify-center hover:border-amber hover:text-amber transition-colors">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </button>
+    <button id="lightbox-prev" type="button" aria-label="Previous photo"
+      class="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-line bg-surface/80 text-paper flex items-center justify-center hover:border-amber hover:text-amber transition-colors">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </button>
+    <button id="lightbox-next" type="button" aria-label="Next photo"
+      class="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-line bg-surface/80 text-paper flex items-center justify-center hover:border-amber hover:text-amber transition-colors">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+
+    <div class="max-w-4xl text-center">
+      <img id="lightbox-img" src="" alt=""
+        class="max-h-[75vh] max-w-[90vw] rounded-2xl border border-line object-contain mx-auto shadow-2xl mb-4">
+      <p id="lightbox-title" class="font-syne font-bold text-xl text-paper mb-1"></p>
+      <p id="lightbox-counter" class="font-mono text-xs text-amber"></p>
+    </div>
+  </div>
+
+  <!-- ============ HOBBIES & OFF THE CLOCK ============ -->
+  <section class="max-w-7xl mx-auto px-6 py-28 md:py-36">
+    <div class="max-w-3xl mb-16" data-reveal="up">
+      <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber mb-3">Off The Clock</p>
+      <h2 class="font-syne font-bold text-4xl sm:text-5xl text-paper">Creative Passions.</h2>
+    </div>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="glass-card p-8 rounded-3xl group" data-reveal="up">
+        <div
+          class="icon-badge w-12 h-12 rounded-2xl border border-line bg-ink flex items-center justify-center text-amber mb-6">
+          <svg class="icon" viewBox="0 0 24 24" fill="none">
+            <path d="M9 18V5l10-2v13" stroke="currentColor" stroke-width="1.8" />
+            <circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="1.8" />
+            <circle cx="17" cy="16" r="3" stroke="currentColor" stroke-width="1.8" />
+          </svg>
+        </div>
+        <h3 class="font-syne font-bold text-xl text-paper mb-2">Old Records &amp; Songs</h3>
+        <p class="text-fog text-sm font-light">Losing hours to vinyl records and timeless Bengali melodies.</p>
+      </div>
+
+      <div class="glass-card p-8 rounded-3xl group" data-reveal="up">
+        <div
+          class="icon-badge w-12 h-12 rounded-2xl border border-line bg-ink flex items-center justify-center text-violet mb-6">
+          <svg class="icon" viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="5" width="18" height="14" rx="1.5" stroke="currentColor" stroke-width="1.8" />
+            <path d="M3 9h18" stroke="currentColor" stroke-width="1.6" />
+          </svg>
+        </div>
+        <h3 class="font-syne font-bold text-xl text-paper mb-2">Art Cinema &amp; Film</h3>
+        <p class="text-fog text-sm font-light">Quiet appreciation for classic international and parallel cinema.</p>
+      </div>
+
+      <div class="glass-card p-8 rounded-3xl group" data-reveal="up">
+        <div
+          class="icon-badge w-12 h-12 rounded-2xl border border-line bg-ink flex items-center justify-center text-roseAccent mb-6">
+          <svg class="icon" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12 3c-4.5 0-8 3.5-8 7.5A4.5 4.5 0 008.5 15c.5 0 1-.4 1-1s-.5-1-1-1a1 1 0 010-2 1 1 0 100-2 1 1 0 111-1 8 8 0 007.9-1.4C18.5 4.8 15.6 3 12 3z"
+              stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <h3 class="font-syne font-bold text-xl text-paper mb-2">Abstract Painting</h3>
+        <p class="text-fog text-sm font-light">Expressing emotions through oil paints and dynamic textures.</p>
+      </div>
+
+      <div class="glass-card p-8 rounded-3xl group" data-reveal="up">
+        <div
+          class="icon-badge w-12 h-12 rounded-2xl border border-line bg-ink flex items-center justify-center text-amber mb-6">
+          <svg class="icon" viewBox="0 0 24 24" fill="none">
+            <path d="M4 7h3l1.5-2h7L17 7h3a1 1 0 011 1v10a1 1 0 01-1 1H4a1 1 0 01-1-1V8a1 1 0 011-1z"
+              stroke="currentColor" stroke-width="1.8" />
+            <circle cx="12" cy="13" r="3.5" stroke="currentColor" stroke-width="1.8" />
+          </svg>
+        </div>
+        <h3 class="font-syne font-bold text-xl text-paper mb-2">Street Vlogging</h3>
+        <p class="text-fog text-sm font-light">Documenting everyday city textures and human stories through a lens.</p>
+      </div>
+
+      <div class="glass-card p-8 rounded-3xl group" data-reveal="up">
+        <div
+          class="icon-badge w-12 h-12 rounded-2xl border border-line bg-ink flex items-center justify-center text-violet mb-6">
+          <svg class="icon" viewBox="0 0 24 24" fill="none">
+            <path d="M12 21c4-3 6-6.5 6-10a6 6 0 10-12 0c0 3.5 2 7 6 10z" stroke="currentColor" stroke-width="1.8" />
+          </svg>
+        </div>
+        <h3 class="font-syne font-bold text-xl text-paper mb-2">Gardening</h3>
+        <p class="text-fog text-sm font-light">Cultivating quiet greenery and patience, measured season by season.</p>
+      </div>
+
+      <div class="glass-card p-8 rounded-3xl group" data-reveal="up">
+        <div
+          class="icon-badge w-12 h-12 rounded-2xl border border-line bg-ink flex items-center justify-center text-amber mb-6">
+          <svg class="icon" viewBox="0 0 24 24" fill="none">
+            <path d="M4 12h16v2a6 6 0 01-6 6H10a6 6 0 01-6-6v-2z" stroke="currentColor" stroke-width="1.8" />
+            <path d="M9 12V8a1.5 1.5 0 013 0M14 12V6a1.5 1.5 0 013 0v6" stroke="currentColor" stroke-width="1.6" />
+          </svg>
+        </div>
+        <h3 class="font-syne font-bold text-xl text-paper mb-2">Artisan Cooking</h3>
+        <p class="text-fog text-sm font-light">Slow recipes, rich spices, and unhurried evening meals with friends.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT & BOOKING ============ -->
+  <section id="contact" class="bg-surface/60 border-t border-line/60 py-28 md:py-36">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16">
+        <div data-reveal="right">
+          <p class="font-mono text-xs uppercase tracking-[0.3em] text-amber mb-3">Collaborate &amp; Book</p>
+          <h2 class="font-syne font-bold text-4xl sm:text-5xl text-paper mb-6">Let's Create Something Iconic.</h2>
+          <p class="text-fog text-base sm:text-lg leading-relaxed font-light mb-8">
+            Available for commercial voiceovers, dubbed TV series, fashion modeling campaigns, and media consulting.
+          </p>
+
+          <div class="space-y-4 font-mono text-sm mb-8">
+            <div class="flex items-center gap-3 text-fog">
+              <span
+                class="w-10 h-10 rounded-xl border border-line bg-surface flex items-center justify-center text-amber">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+                  <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8" />
+                  <path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.8" />
+                </svg>
+              </span>
+              <a href="mailto:hello@rishiabir.com"
+                class="text-paper hover:text-amber transition-colors">hello@rishiabir.com</a>
+            </div>
+            <div class="flex items-center gap-3 text-fog">
+              <span
+                class="w-10 h-10 rounded-xl border border-line bg-surface flex items-center justify-center text-violet">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 21s7-6.2 7-11.5A7 7 0 105 9.5C5 14.8 12 21 12 21z" stroke="currentColor"
+                    stroke-width="1.8" />
+                  <circle cx="12" cy="9.5" r="2.5" stroke="currentColor" stroke-width="1.8" />
+                </svg>
+              </span>
+              <span class="text-paper">Dhaka, Bangladesh</span>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <a href="#"
+              class="w-12 h-12 rounded-2xl border border-line bg-surface flex items-center justify-center text-fog hover:text-amber hover:border-amber hover:-translate-y-1 transition-all"
+              aria-label="Instagram">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8" />
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8" />
+                <circle cx="17.2" cy="6.8" r="1" fill="currentColor" />
+              </svg>
+            </a>
+            <a href="#"
+              class="w-12 h-12 rounded-2xl border border-line bg-surface flex items-center justify-center text-fog hover:text-amber hover:border-amber hover:-translate-y-1 transition-all"
+              aria-label="Facebook">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M14 21v-7h2.5l.5-3H14V9a1.5 1.5 0 011.5-1.5H17V4.5A16 16 0 0014.8 4 4 4 0 0011 8.2V11H8.5v3H11v7"
+                  stroke="currentColor" stroke-width="1.8" />
+              </svg>
+            </a>
+            <a href="#"
+              class="w-12 h-12 rounded-2xl border border-line bg-surface flex items-center justify-center text-fog hover:text-amber hover:border-amber hover:-translate-y-1 transition-all"
+              aria-label="YouTube">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="6" width="18" height="12" rx="4" stroke="currentColor" stroke-width="1.8" />
+                <path d="M10.5 9.5l5 2.5-5 2.5v-5z" fill="currentColor" />
+              </svg>
+            </a>
+            <a href="#"
+              class="w-12 h-12 rounded-2xl border border-line bg-surface flex items-center justify-center text-fog hover:text-amber hover:border-amber hover:-translate-y-1 transition-all"
+              aria-label="LinkedIn">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8" />
+                <circle cx="8" cy="8.5" r="1" fill="currentColor" />
+                <path d="M8 11v6M12 11v6M12 13.5c0-1.5 1-2.5 2.5-2.5S17 12 17 13.5V17" stroke="currentColor"
+                  stroke-width="1.8" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive Form -->
+        <form id="contact-form" data-reveal="left" class="glass-card p-8 sm:p-10 rounded-3xl space-y-6">
+          <input type="hidden" id="project-type-input" name="project_type" value="Voiceover">
+
+          <div>
+            <label class="block font-mono text-xs uppercase tracking-widest text-fog mb-3">Project Discipline</label>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+              <button type="button"
+                class="project-type-chip border border-violet bg-violet/20 text-violet px-3 py-2 rounded-xl font-mono text-[11px] text-center transition-all"
+                data-type="Voiceover">Voiceover</button>
+              <button type="button"
+                class="project-type-chip border border-line bg-surface text-fog px-3 py-2 rounded-xl font-mono text-[11px] text-center transition-all"
+                data-type="Modeling">Modeling</button>
+              <button type="button"
+                class="project-type-chip border border-line bg-surface text-fog px-3 py-2 rounded-xl font-mono text-[11px] text-center transition-all"
+                data-type="Branding">Branding</button>
+              <button type="button"
+                class="project-type-chip border border-line bg-surface text-fog px-3 py-2 rounded-xl font-mono text-[11px] text-center transition-all"
+                data-type="Media">Media Directing</button>
+            </div>
+          </div>
+
+          <div>
+            <label for="name" class="block font-mono text-xs uppercase tracking-widest text-fog mb-2">Your Name /
+              Organization</label>
+            <input id="name" name="name" type="text" required
+              class="w-full bg-ink border border-line rounded-xl px-4 py-3.5 text-paper placeholder-fog/50 focus:outline-none focus:border-amber transition-colors"
+              placeholder="e.g. Acme Media Corp">
+          </div>
+
+          <div>
+            <label for="email" class="block font-mono text-xs uppercase tracking-widest text-fog mb-2">Email
+              Address</label>
+            <input id="email" name="email" type="email" required
+              class="w-full bg-ink border border-line rounded-xl px-4 py-3.5 text-paper placeholder-fog/50 focus:outline-none focus:border-amber transition-colors"
+              placeholder="you@company.com">
+          </div>
+
+          <div>
+            <label for="message" class="block font-mono text-xs uppercase tracking-widest text-fog mb-2">Project Brief
+              &amp; Script Details</label>
+            <textarea id="message" name="message" required rows="4"
+              class="w-full bg-ink border border-line rounded-xl px-4 py-3.5 text-paper placeholder-fog/50 focus:outline-none focus:border-amber transition-colors"
+              placeholder="Tell us about your brand vision, script length, or booking timeline..."></textarea>
+          </div>
+
+          <button type="submit"
+            class="btn-shine w-full py-4 rounded-xl bg-gradient-to-r from-violet via-amber to-violet text-ink font-syne font-bold text-sm uppercase tracking-wider hover:opacity-95 shadow-xl shadow-violet/20 transition-all">
+            Send Project Inquiry
+          </button>
+
+          <p id="form-status"
+            class="font-mono text-xs text-amber hidden text-center p-3 rounded-xl bg-amber/10 border border-amber/30">
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-t border-line/60 bg-ink">
+    <div class="max-w-7xl mx-auto px-6 py-12 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-violet to-amber p-0.5">
+          <div
+            class="w-full h-full bg-ink rounded-[6px] flex items-center justify-center font-syne font-bold text-amber text-xs">
+            RA
+          </div>
+        </div>
+        <p class="font-mono text-xs text-fog">&copy; <span id="year"></span> Rishi Abir. All rights reserved.</p>
+      </div>
+      <p class="font-display italic text-lg text-fog">Voice Artist &bull; Model &bull; Media Director</p>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
