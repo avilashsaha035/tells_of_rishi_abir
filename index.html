@@ -239,7 +239,7 @@
     <div id="scroll-progress"
       class="absolute top-0 left-0 h-[2px] bg-gradient-to-r from-violet via-amber to-roseAccent w-0 transition-all duration-150">
     </div>
-    <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <nav class="max-w-7xl mx-auto px-6 h-16 sm:h-20 flex items-center justify-between">
       <a href="#home" class="flex items-center gap-3 group">
         <div
           class="w-10 h-10 rounded-xl bg-gradient-to-br from-violet to-amber p-0.5 shadow-lg shadow-violet/20 group-hover:scale-105 transition-transform">
@@ -298,7 +298,7 @@
   </header>
 
   <!-- ============ HERO SECTION ============ -->
-  <section id="home" class="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
+  <section id="home" class="relative min-h-[100dvh] md:h-[100dvh] flex flex-col justify-center pt-20 pb-10 md:py-0 overflow-hidden">
     <!-- Background Glow & Soundwave Line Art -->
     <svg class="pointer-events-none absolute inset-0 w-full h-full opacity-[0.08]" viewBox="0 0 1200 800"
       preserveAspectRatio="none" aria-hidden="true">
@@ -313,10 +313,10 @@
       class="pointer-events-none absolute -bottom-40 -left-40 w-[35rem] h-[35rem] bg-amber/15 rounded-full blur-[150px] animate-drift-slow">
     </div>
 
-    <div class="relative max-w-7xl mx-auto px-6 w-full grid md:grid-cols-[1.1fr_1fr] items-center gap-12 lg:gap-16">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 w-full grid md:grid-cols-[1.1fr_1fr] items-center gap-8 lg:gap-12 my-auto pt-4 md:pt-16">
       <div data-reveal="up">
         <div
-          class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-violet/30 bg-surface/80 text-fog text-xs font-mono mb-8 backdrop-blur-md">
+          class="inline-flex items-center gap-2.5 sm:gap-3 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full border border-violet/30 bg-surface/80 text-fog text-xs font-mono mb-3 sm:mb-4 lg:mb-6 backdrop-blur-md">
           <span class="inline-block w-2.5 h-2.5 rounded-full bg-amber animate-pulse"></span>
           <span>DHAKA &bull; 23&deg;48'N 90&deg;24'E</span>
           <span class="text-violet">&bull;</span>
@@ -324,40 +324,40 @@
         </div>
 
         <h1
-          class="font-syne font-extrabold text-5xl sm:text-7xl lg:text-8xl leading-[0.95] tracking-tight text-paper mb-4">
+          class="font-syne font-extrabold text-4xl sm:text-6xl lg:text-7xl xl:text-8xl leading-[0.95] tracking-tight text-paper mb-2 sm:mb-3">
           RISHI<br>
-          <span class="text-gradient font-display italic font-normal text-6xl sm:text-8xl lg:text-9xl">Abir</span>
+          <span class="text-gradient font-display italic font-normal text-5xl sm:text-7xl lg:text-8xl xl:text-9xl">Abir</span>
         </h1>
 
-        <p class="font-script text-3xl sm:text-4xl text-amber -rotate-1 mb-6">the voice &amp; presence you already know
+        <p class="font-script text-2xl sm:text-3xl lg:text-4xl text-amber -rotate-1 mb-3 sm:mb-4">the voice &amp; presence you already know
         </p>
 
         <!-- Signature animated equalizer -->
-        <div id="equalizer" class="flex items-end gap-[4px] h-12 my-6" aria-label="Equalizer sound bars visualizer">
+        <div id="equalizer" class="flex items-end gap-[4px] h-8 sm:h-10 lg:h-12 my-3 sm:my-4" aria-label="Equalizer sound bars visualizer">
         </div>
 
-        <p class="max-w-xl text-fog text-base sm:text-lg leading-relaxed font-light mb-8 space-y-3">
-          <span class="block text-paper font-semibold text-lg sm:text-xl">The signature voice behind major commercial
+        <p class="max-w-xl text-fog text-sm sm:text-base lg:text-lg leading-relaxed font-light mb-4 sm:mb-6 space-y-2">
+          <span class="block text-paper font-semibold text-base sm:text-lg lg:text-xl">The signature voice behind major commercial
             campaigns, TV dubbing series &amp; animated features across Bangladesh.</span>
           <span class="block text-fog">Bringing iconic characters, commercial ads, and documentary narrations to life
             with distinctive vocal depth, emotional range, and studio precision.</span>
-          <span class="block text-sm text-amber font-mono pt-1">&bull; Currently Sr. Executive Officer
+          <span class="block text-xs sm:text-sm text-amber font-mono pt-1">&bull; Currently Sr. Executive Officer
             at
             Asia's largest shopping destination — <strong class="text-paper">Jamuna Future Park</strong>.</span>
         </p>
 
         <!-- Role Cycler -->
-        <div class="p-4 rounded-xl border border-line bg-surface/60 backdrop-blur-md mb-10 max-w-lg">
+        <div class="p-3 sm:p-4 rounded-xl border border-line bg-surface/60 backdrop-blur-md mb-6 sm:mb-8 max-w-md">
           <p class="font-mono text-xs uppercase tracking-widest text-fog flex items-center gap-2">
             <span>Creative Focus:</span>
             <span class="text-violet font-bold">&bull;</span>
-            <span id="role-cycler" class="text-paper font-bold text-sm tracking-normal">Voice Artist</span>
+            <span id="role-cycler" class="text-paper font-bold text-xs sm:text-sm tracking-normal">Voice Artist</span>
           </p>
         </div>
 
-        <div class="flex flex-wrap gap-4">
+        <div class="flex flex-wrap gap-3 sm:gap-4">
           <a href="#voice"
-            class="btn-shine group px-8 py-4 rounded-full bg-gradient-to-r from-violet to-violet/80 text-paper font-semibold text-sm hover:shadow-xl hover:shadow-violet/30 hover:-translate-y-0.5 transition-all inline-flex items-center gap-3">
+            class="btn-shine group px-6 py-3 sm:px-8 sm:py-4 rounded-full bg-gradient-to-r from-violet to-violet/80 text-paper font-semibold text-xs sm:text-sm hover:shadow-xl hover:shadow-violet/30 hover:-translate-y-0.5 transition-all inline-flex items-center gap-3">
             <span>Listen to Voice Reel</span>
             <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none">
               <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -365,16 +365,16 @@
             </svg>
           </a>
           <a href="#simulator"
-            class="btn-shine px-8 py-4 rounded-full border border-line bg-surface/50 text-paper font-semibold text-sm hover:border-amber hover:text-amber hover:-translate-y-0.5 transition-all">
+            class="btn-shine px-6 py-3 sm:px-8 sm:py-4 rounded-full border border-line bg-surface/50 text-paper font-semibold text-xs sm:text-sm hover:border-amber hover:text-amber hover:-translate-y-0.5 transition-all">
             Studio Mic Simulator
           </a>
         </div>
       </div>
 
       <!-- Hero Visual Showcase -->
-      <div data-reveal="scale" class="relative mx-auto w-full max-w-lg" data-tilt>
+      <div data-reveal="scale" class="relative mx-auto w-full max-w-[280px] xs:max-w-xs sm:max-w-md lg:max-w-lg" data-tilt>
         <div
-          class="relative rounded-3xl overflow-hidden border border-line/80 bg-surface shadow-2xl shadow-violet/20 aspect-[4/5] group">
+          class="relative w-full aspect-[4/5] rounded-3xl overflow-hidden border border-line/80 bg-surface shadow-2xl shadow-violet/20 group">
           <img src="images/rishi_abir.jpg" alt="Rishi Abir Recording Studio Session"
             class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
 
@@ -391,22 +391,22 @@
 
           <!-- Live Status Overlay -->
           <div
-            class="absolute top-6 left-6 flex items-center gap-2.5 font-mono text-xs uppercase tracking-widest text-paper bg-ink/70 px-3.5 py-1.5 rounded-full border border-line backdrop-blur-md">
+            class="absolute top-4 left-4 sm:top-6 sm:left-6 flex items-center gap-2.5 font-mono text-[10px] sm:text-xs uppercase tracking-widest text-paper bg-ink/70 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full border border-line backdrop-blur-md">
             <span class="w-2.5 h-2.5 rounded-full bg-roseAccent rec-dot"></span> Studio 01 &bull; Active
           </div>
 
           <div
-            class="absolute top-6 right-6 font-mono text-xs text-amber bg-ink/70 px-3 py-1 rounded-full border border-line backdrop-blur-md">
+            class="absolute top-4 right-4 sm:top-6 sm:right-6 font-mono text-[10px] sm:text-xs text-amber bg-ink/70 px-3 py-1 rounded-full border border-line backdrop-blur-md">
             96kHz / 24-bit
           </div>
 
           <!-- Live Audio Waveform Canvas Box -->
-          <div class="absolute bottom-6 inset-x-6 bg-ink/85 border border-line rounded-2xl p-4 backdrop-blur-md">
+          <div class="absolute bottom-4 inset-x-4 sm:bottom-6 sm:inset-x-6 bg-ink/85 border border-line rounded-2xl p-3 sm:p-4 backdrop-blur-md">
             <div class="flex items-center justify-between mb-2">
               <span class="font-mono text-[10px] uppercase tracking-widest text-fog">Live Spectrum Monitor</span>
               <span class="font-mono text-[10px] text-amber">Studio Condenser</span>
             </div>
-            <div class="w-full h-12 bg-surface/80 rounded-lg overflow-hidden border border-line/50 relative">
+            <div class="w-full h-10 sm:h-12 bg-surface/80 rounded-lg overflow-hidden border border-line/50 relative">
               <canvas id="audio-canvas" class="w-full h-full block"></canvas>
             </div>
           </div>
